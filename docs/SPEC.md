@@ -117,12 +117,24 @@ Salida asociada:
 - `planform_params` (vector)
 - `planform_measurements` (ERS literal)
 
-### Capa B — Forma 3D (trim/aerodinámica)
-Parámetros que controlan el **flying shape** para un planform dado:
+### Capa B — Trim 3D (flying shape + pose)
+Parámetros que controlan la geometría 3D para un planform dado.
+
+Se dividen en dos sub-bloques (pero ambos se consideran *trim*):
+
+1) **Shape (deformación aerodinámica)**
 - `twist(η)`, `camber(η)`, `camber_pos(η)`
+
+2) **Pose / trim rígido (ángulos globales)**
+- Mayor: `main_boom_angle_deg` (rotación de la mayor alrededor de su grátil/mástil)
+- Foque: `jib_sheet_angle_deg` (rotación del foque alrededor del estay)
+
+3) **Rig deformation (trim estructural simplificado)**
+- `mast_bend_params` que definen una curva de desplazamiento del mástil en el plano de la vela (ver §6.3.x).
 
 Salida asociada:
 - `shape_params` (vector)
+- `pose_params` (vector)
 - (opcional) `section_curves` (perfiles 2D por estación)
 
 Esto permite entrenar y usar el surrogate de forma jerárquica:
@@ -180,10 +192,10 @@ Definir estaciones en altura `η=z/H`, η∈[0,1].
 En cada estación:
 - Cuerda `c(η)` viene del planform.
 - Definir camber (draft) y posición de draft:
-  - `camber(η)` como % de cuerda.
-  - `camber_pos(η)` como % de cuerda.
+  - `camber(η)` como fracción de cuerda (ej. 0.08 = 8%).
+  - `camber_pos(η)` como fracción de cuerda (0–1).
 - Definir twist:
-  - `twist(η)` en grados.
+  - `twist(η)` en grados, como rotación de la sección alrededor de la línea del grátil/estay local.
 
 **Parametrización compacta (recomendada para ML):**
 Representar cada función con pocos coeficientes:
@@ -193,9 +205,28 @@ Representar cada función con pocos coeficientes:
 
 De este modo el vector de parámetros es de dimensión fija (ideal para red).
 
-**Sección 2D (curvatura polinómica):**
+**Sección 2D (curvatura):**
 - Usar una línea de curvatura tipo “NACA 4-digit camber line” o polinomio piecewise que garantice suavidad C1/C2.
-- Opción: permitir “asymmetry” controlada (para modelling de vela real con distinta curvatura barlovento/sotavento) — fuera de MVP.
+- Opción: permitir asimetría controlada — fuera de MVP.
+
+#### 6.3.1 Pose (sheet/boom angles)
+Además de `twist(η)`, se define un ángulo global por vela:
+- `main_boom_angle_deg`: rotación rígida de toda la mayor alrededor del grátil (mástil).
+- `jib_sheet_angle_deg`: rotación rígida de todo el foque alrededor del grátil (estay).
+
+Motivo: `twist(η)` controla variación relativa con la altura; el ángulo global controla el “offset” de trim.
+
+#### 6.3.2 Mast bend (trim estructural simplificado)
+Se incorpora un desplazamiento del punto de anclaje del grátil de la mayor sobre el mástil:
+- Definir una función `mast_bend_x(ζ)` con `ζ=z/mast_len`.
+- MVP (baja dimensión):
+  - `mast_bend_amp_m` (amplitud máxima, m)
+  - forma fija: `mast_bend_x(ζ) = mast_bend_amp_m * sin(pi*ζ)`
+  - con `mast_bend_x(0)=mast_bend_x(1)=0`.
+
+La mayor se construye por estaciones: en cada z se traslada la sección en `x` según `mast_bend_x(ζ)` antes de aplicar el loft.
+
+Nota: esto modela el efecto geométrico del bend en la mayor sin resolver FSI.
 
 ## 7) Espesor y watertight
 snappyHexMesh es más robusto con superficies cerradas.
@@ -262,7 +293,9 @@ Cada muestra (planform + shape) debe producir:
 - `planform_params_m.json` (metros)
 - `planform_params_hat.json` (normalizado por máximos reglamentarios)
 - `shape_params_deg_or_frac.json` (twist en °; camber/camber_pos como fracción de cuerda)
-- `shape_params_hat.json` (vector canónico para ML; ver `docs/ML_VECTOR.md`)
+- `pose_params_deg.json` (ángulos globales boom/sheet en °)
+- `mast_bend_params_m.json` (parámetros de bend en m)
+- `trim_params_hat.json` (vector canónico para ML; ver `docs/ML_VECTOR.md`)
 - `wind_params.json` (cuando aplique en el pipeline CFD)
 - `rig_params.json` (siempre; fijo para posicionamiento)
 - `geometry_main.stl`, `geometry_jib.stl`

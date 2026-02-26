@@ -15,7 +15,10 @@ Decisión: el vector canónico usado por ML será el **normalizado** (adimension
 ## Capas de parámetros (separación diseño vs trim)
 Se exportan 2 vectores separados:
 - `planform_params_hat`: diseño/corte (cumplimiento reglamentario 2D)
-- `shape_params_hat`: trim/flying shape (twist/camber)
+- `trim_params_hat`: trim 3D, subdividido en:
+  - `shape_params_hat` (twist/camber/camber_pos)
+  - `pose_params_hat` (boom/sheet angles)
+  - `mast_bend_params_hat` (bend del mástil)
 
 Y opcionalmente (pipeline CFD):
 - `wind_params_hat`: condiciones de viento/operación
@@ -32,18 +35,29 @@ Ejemplos:
 - `main.luff_len_hat = main.luff_len_m / main.luff_len_max_m`
 - `jib.LP_hat = jib.LP_m / jib.LP_max_m`
 
-### B) Flying shape
-#### Twist
-Se recomienda normalizar a [-1, 1] usando un rango de diseño fijado (por dataset):
+### B) Trim params
+#### B1) Shape (twist, camber, camber_pos)
+**Twist**: normalizar a [-1, 1] usando un rango de diseño fijado (por dataset):
 - Definir `twist_min_deg`, `twist_max_deg` (globales por vela) y mapear:
   - \(\hat{\theta} = 2*(\theta-\theta_{min})/(\theta_{max}-\theta_{min}) - 1\)
 
-Motivo: evita mezclar grados con variables [0,1] y facilita sampling.
-
-#### Camber y camber position
-Trabajar en fracción de cuerda (ya adimensional):
+**Camber y camber position**: ya adimensional (fracción de cuerda):
 - `camber_hat = camber_frac` (ej. 0.08 para 8%)
 - `camber_pos_hat = camber_pos_frac` (ej. 0.40)
+
+#### B2) Pose (sheet/boom angles)
+Normalizar a [-1,1] con rangos definidos:
+- `main_boom_angle_deg` en [`boom_min_deg`, `boom_max_deg`]
+- `jib_sheet_angle_deg` en [`jibsheet_min_deg`, `jibsheet_max_deg`]
+
+#### B3) Mast bend
+MVP: un parámetro físico:
+- `mast_bend_amp_m`
+
+Normalización:
+- `mast_bend_amp_hat = mast_bend_amp_m / mast_bend_amp_max_m`
+
+(Se recomienda un `mast_bend_amp_max_m` conservador para el dataset inicial.)
 
 ### C) Variables que se dejan físicas
 Algunas variables se dejan en unidades y se documenta explícitamente:

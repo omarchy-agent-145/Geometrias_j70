@@ -24,13 +24,11 @@ Este documento existe para que la implementación sea **única** y reproducible.
 ## Abiertas (por cerrar)
 
 ### O1 — Curvatura del mástil (mast bend) y curvatura del grátil (luff curve)
-- Pregunta: ¿incorporar desde el inicio un modelo de **mast bend** (deformación del eje del mástil) como parámetro de trim/operación?
-- Nota importante: usar **grátil recto en el planform** NO implica que el mástil sea recto; son conceptos distintos:
-  - Planform/ERS mide el borde del paño (2D).
-  - Mast bend afecta el posicionamiento/warp 3D (CFD).
+- **Decisión:** incluir **mast bend** desde el inicio como parámetro de trim.
+- `luff curve` del paño (en el planform 2D) queda fuera del MVP.
 
 ### O2 — Parámetros de pose (sheeting / boom angle)
-- Pregunta: definir un bloque `pose_params` (por vela) con ángulos globales respecto a la crujía para CFD.
+- **Decisión:** incluir desde el inicio ángulos globales de trim (boom/sheet) como parámetros de pose.
 
 ### O3 — Rangos iniciales de twist/camber/camber_pos
 - Definir rangos de diseño realistas y límites para evitar geometrías degeneradas.
