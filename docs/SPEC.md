@@ -226,8 +226,10 @@ Esto facilita entrenar modelos tipo:
 
 ### 12.2 Artefactos por muestra
 Cada muestra (planform + shape) debe producir:
-- `planform_params.json`
-- `shape_params.json`
+- `planform_params_m.json` (metros)
+- `planform_params_hat.json` (normalizado por máximos reglamentarios)
+- `shape_params_deg_or_frac.json` (twist en °; camber/camber_pos como fracción de cuerda)
+- `shape_params_hat.json` (vector canónico para ML; ver `docs/ML_VECTOR.md`)
 - `wind_params.json` (cuando aplique en el pipeline CFD)
 - `geometry_main.stl`, `geometry_jib.stl`
 - `measurements_main.json`, `measurements_jib.json` (ERS literal)

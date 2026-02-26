@@ -1,0 +1,58 @@
+# Vector canónico para ML (inputs del surrogate)
+
+## Objetivo
+Definir un **vector de entrada estable numéricamente** y trazable para entrenamiento/inferencia del surrogate.
+
+Decisión: el vector canónico usado por ML será el **normalizado** (adimensional) y siempre se guardará también la versión en unidades físicas (m, °) como metadata.
+
+## Por qué normalizar (justificación)
+1) **Estabilidad numérica**: redes entrenan mejor con variables en rangos comparables (≈O(1)).
+2) **Sampling consistente**: límites naturales [0,1] para magnitudes con máximos reglamentarios.
+3) **Compatibilidad multi-ruleset**: si cambian máximos por año/regla, la normalización conserva interpretación.
+4) **Reproducibilidad**: queda explícito qué reglas (máximos) se usaron para construir 
+   \(\hat{x}=x/x_{max}\).
+
+## Capas de parámetros (separación diseño vs trim)
+Se exportan 2 vectores separados:
+- `planform_params_hat`: diseño/corte (cumplimiento reglamentario 2D)
+- `shape_params_hat`: trim/flying shape (twist/camber)
+
+Y opcionalmente (pipeline CFD):
+- `wind_params_hat`: condiciones de viento/operación
+
+## Normalización propuesta
+### A) Planform (en metros → fracción del máximo reglamentario)
+Para cada magnitud reglamentaria con máximo \(x_{max}\):
+- \(\hat{x} = x / x_{max}\)
+
+Ejemplos:
+- `main.luff_len_hat = main.luff_len_m / main.luff_len_max_m`
+- `jib.LP_hat = jib.LP_m / jib.LP_max_m`
+
+### B) Flying shape
+#### Twist
+Se recomienda normalizar a [-1, 1] usando un rango de diseño fijado (por dataset):
+- Definir `twist_min_deg`, `twist_max_deg` (globales por vela) y mapear:
+  - \(\hat{\theta} = 2*(\theta-\theta_{min})/(\theta_{max}-\theta_{min}) - 1\)
+
+Motivo: evita mezclar grados con variables [0,1] y facilita sampling.
+
+#### Camber y camber position
+Trabajar en fracción de cuerda (ya adimensional):
+- `camber_hat = camber_frac` (ej. 0.08 para 8%)
+- `camber_pos_hat = camber_pos_frac` (ej. 0.40)
+
+### C) Variables que se dejan físicas
+Algunas variables se dejan en unidades y se documenta explícitamente:
+- `clew_height_frac` ya es adimensional, se deja tal cual.
+
+## Artefactos por muestra (nombres recomendados)
+- `planform_params_m.json` (metros)
+- `planform_params_hat.json` (normalizado)
+- `shape_params_deg_or_frac.json` (twist en °, camber y pos como fracción)
+- `shape_params_hat.json` (twist normalizado [-1,1], camber/pos en [0,1])
+- `ruleset.json` (versiones + máximos usados)
+
+## Nota sobre interpretabilidad
+Para análisis humano (plots/reportes) se usará por defecto la versión en **metros/°**.
+Para entrenamiento/inferencia del modelo se usará la versión **hat**.
