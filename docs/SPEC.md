@@ -216,6 +216,8 @@ Además de `twist(η)`, se define un ángulo global por vela:
 - `main_boom_angle_deg`: rotación rígida de toda la mayor alrededor del grátil (mástil).
 - `jib_sheet_angle_deg`: rotación rígida de todo el foque alrededor del grátil (estay).
 
+**Referencia:** 0° = vela alineada con la crujía (plano x–z del boat frame). Signo por mano derecha; positivo desplaza clew hacia +y (babor). Ver `docs/COORDINATES.md`.
+
 Motivo: `twist(η)` controla variación relativa con la altura; el ángulo global controla el “offset” de trim.
 
 #### 6.3.2 Mast bend (trim estructural simplificado)

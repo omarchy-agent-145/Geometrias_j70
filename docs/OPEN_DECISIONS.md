@@ -31,6 +31,7 @@ Este documento existe para que la implementación sea **única** y reproducible.
 
 ### O2 — Parámetros de pose (sheeting / boom angle)
 - **Decisión:** incluir desde el inicio ángulos globales de trim (boom/sheet) como parámetros de pose.
+- **Convención:** 0° alineado con crujía (plano x–z), positivo hacia +y (babor), mano derecha (ver `docs/COORDINATES.md`).
 
 ### O3 — Rangos iniciales de twist/camber/camber_pos
 - Definir rangos de diseño realistas y límites para evitar geometrías degeneradas.

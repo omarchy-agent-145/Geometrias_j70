@@ -33,6 +33,8 @@ Todos los ángulos se definen con la **regla de la mano derecha** alrededor del 
 - `main_boom_angle_deg`: rotación rígida de la mayor alrededor del eje del grátil (eje del mástil en boat frame).
 - `jib_sheet_angle_deg`: rotación rígida del foque alrededor del eje del grátil (eje del estay en boat frame).
 
+**Referencia (0°)**: vela alineada con la **crujía** (plano x–z; clew en y=0).
+
 **Signo**: positivo si la rotación desplaza el clew hacia **+y (babor)**.
 
 Esto es consistente con starboard tack típico (velas hacia babor ⇒ ángulos positivos).
