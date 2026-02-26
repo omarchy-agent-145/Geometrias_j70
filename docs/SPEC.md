@@ -32,12 +32,27 @@ Construir un generador **100% Python** capaz de crear la geometría 3D completa 
 ## 3) Convenciones y sistema de coordenadas
 Definir una convención fija (crítica para dataset):
 - Unidades: **metros** (internamente). Input/Output permite mm pero se normaliza.
-- Ejes recomendados:
-  - **z**: vertical (altura sobre el tack), z=0 en tack.
-  - **x**: dirección “hacia atrás” (de grátil hacia baluma / hacia popa en el barco).
-  - **y**: dirección transversal (espesor y lado barlovento/sotavento).
 
-La superficie media de la vela se genera inicialmente en el plano x–z (y=0), luego se aplica espesor ±y.
+### 3.1 Marcos de referencia (decisión de diseño)
+Usaremos dos marcos:
+
+1) **Sail frame (medición/ERS)**: marco local por vela, pensado para que la medición ERS sea directa.
+   - `z`: a lo largo del grátil (luff), con `tack` en z=0.
+   - `x`: desde el grátil hacia la baluma (dirección de cuerda).
+   - `y`: normal para espesor (barlovento/sotavento).
+
+2) **Boat/Rig frame (CFD)**: marco global donde se posicionan mayor y foque para OpenFOAM.
+   - En este marco se define la **geometría del aparejo** (mástil/estay) y se aplican transformaciones rígidas a las velas.
+
+La superficie media se genera inicialmente en el plano x–z (y=0) en el sail frame, luego se aplica espesor ±y.
+
+### 3.2 Parámetros de aparejo (rig_params) para posicionamiento
+Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto el proyecto define un bloque `rig_params` (con defaults J/70 y documentados) que controla:
+- Línea del mástil (incluye rake): puntos `mast_tack_point` y `mast_head_point` en boat frame.
+- Línea del estay de proa: puntos `forestay_tack_point` y `forestay_head_point` en boat frame.
+- (Opcional) altura del puño de amura de mayor (gooseneck height) si se quiere separar tack de mayor de la referencia z=0.
+
+Con esto, el ángulo del foque respecto al mástil **se deriva** geométricamente de esas dos líneas.
 
 ## 4) Reglas: qué se debe cumplir (MVP)
 ### 4.1 Mayor (mainsail) — constraints
