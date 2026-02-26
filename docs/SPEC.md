@@ -44,7 +44,13 @@ Usaremos dos marcos:
 2) **Boat/Rig frame (CFD)**: marco global donde se posicionan mayor y foque para OpenFOAM.
    - En este marco se define la **geometría del aparejo** (mástil/estay) y se aplican transformaciones rígidas a las velas.
 
-La superficie media se genera inicialmente en el plano x–z (y=0) en el sail frame, luego se aplica espesor ±y.
+La superficie media se genera en el **espacio (x,y,z)** del sail frame mediante secciones 2D en el plano **x–y** para diferentes alturas `z`.
+
+- `x`: dirección de cuerda (desde el grátil hacia la baluma).
+- `y`: dirección normal al "plano medio" (aquí vive la **curvatura/camber** de la sección).
+- `z`: altura (a lo largo del grátil).
+
+Luego se aplica un espesor pequeño creando una superficie doble y cerrando el borde (ver §7). **El espesor no se aplica como ±y constante**, sino como un offset aproximadamente normal a la superficie media.
 
 ### 3.2 Parámetros de aparejo (rig_params) para posicionamiento
 Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto el proyecto define un bloque `rig_params` (con defaults J/70 y documentados) que controla el **posicionamiento**.
@@ -193,8 +199,11 @@ snappyHexMesh es más robusto con superficies cerradas.
 
 **MVP**:
 - `thickness` (m) constante (p.ej. 0.002).
-- Generar dos superficies offset (±thickness/2 en y) y cerrar borde con una banda triangulada.
+- Generar una **superficie media** (con camber y twist).
+- Crear dos superficies offset a distancia `±thickness/2` usando un desplazamiento **aprox. normal a la superficie** (por triángulo o por vértice con normal suavizada), y cerrar el borde con una banda triangulada.
 - Salida: 1 STL watertight por vela.
+
+Motivo: como el camber vive en `y`, un offset `±y` constante no representa espesor real y puede introducir artefactos geométricos.
 
 ## 8) Requisitos de output para OpenFOAM
 - Export a `*.stl` (preferido) y/o `*.obj`.
