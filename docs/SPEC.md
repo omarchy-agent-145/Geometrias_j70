@@ -84,6 +84,9 @@ A partir de J/70 Class Rules 2026, Sección G:
 
 **Importante**: el reglamento no entrega explícitamente foot/leech máximos en la tabla; el software debe definir un planform que respete las medidas existentes.
 
+Parámetro de diseño adicional (para cerrar el problema geométrico):
+- `jib_clew_height` (m, en boat frame; rango inicial 0.10–0.40 m sobre cubierta) o alternativamente `jib_clew_height_frac`.
+
 ### 4.3 Interpretación/Medición (ERS) — LITERAL
 Para automatizar cumplimiento, necesitamos un **módulo de medición ERS literal** ("measurer"):
 - Dado un contorno 2D, computa magnitudes **según definiciones ERS**.

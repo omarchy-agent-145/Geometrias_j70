@@ -58,6 +58,7 @@ Esto desacopla:
 - posicionamiento para CFD (global).
 
 ## Parámetros extra recomendados (futuro)
-- `mast_rake_deg` (si queremos que el mástil no sea vertical en boat frame)
+- `mast_bend_x(z)` (curvatura del eje del mástil) como función/coeficientes; útil para modelar trim (backstay) y su efecto en la mayor.
+- `luff_curve` del paño (curvatura del grátil en el planform) si se quiere aproximar construcción de vela.
 - `gooseneck_height` (altura real del pujamen/puño de amura de mayor)
 - offsets laterales (y) si modelamos separación lateral de velas respecto al plano medio
