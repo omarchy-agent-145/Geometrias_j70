@@ -48,9 +48,13 @@ La superficie media se genera inicialmente en el plano x–z (y=0) en el sail fr
 
 ### 3.2 Parámetros de aparejo (rig_params) para posicionamiento
 Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto el proyecto define un bloque `rig_params` (con defaults J/70 y documentados) que controla:
-- Línea del mástil (incluye rake): puntos `mast_tack_point` y `mast_head_point` en boat frame.
-- Línea del estay de proa: puntos `forestay_tack_point` y `forestay_head_point` en boat frame.
-- (Opcional) altura del puño de amura de mayor (gooseneck height) si se quiere separar tack de mayor de la referencia z=0.
+- Línea del mástil (incluye rake).
+  - Inputs mínimos: `mast_base_point`, `mast_rake_deg`, `mast_len`.
+  - Puntos derivados: `mast_tack_point` (=base) y `mast_head_point` (=base + mast_len·dir).
+- Línea del estay de proa.
+  - Inputs mínimos: `I`, `J`.
+  - Puntos derivados (MVP): `forestay_tack_point=(J,0)` y `forestay_head_point` como el punto sobre el mástil a distancia `I` desde la base (con rake aplicado).
+- (Opcional) `gooseneck_height` si se quiere separar tack de mayor de la referencia z=0.
 
 Con esto, el ángulo del foque respecto al mástil **se deriva** geométricamente de esas dos líneas.
 

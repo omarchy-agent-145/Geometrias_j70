@@ -22,23 +22,32 @@ En esa tabla aparecen (métrico):
 Definimos un modelo de rig simplificado por dos líneas:
 
 ### Mástil
-- `mast_tack_point = (x_mast_base, z_mast_base)`
-- `mast_head_point = (x_mast_head, z_mast_head)`
+Inputs mínimos:
+- `mast_base_point = (x0, z0)`
+- `mast_len`
+- `mast_rake_deg` (positivo = mástil inclinado hacia popa, +x)
 
-MVP: mástil vertical en x=0, con base en el origen:
-- `mast_tack_point = (0, 0)`
-- `mast_head_point = (0, mast_len)`
+Puntos derivados:
+- `mast_tack_point = mast_base_point`
+- `mast_head_point = mast_base_point + mast_len * dir_mast`
+
+con
+- `dir_mast = (sin(rake), cos(rake))` usando `rake = mast_rake_deg * π/180`.
+
+MVP por defecto:
+- `mast_base_point = (0,0)`
+- `mast_rake_deg = 0`
 
 ### Estay de proa (forestay/headstay)
-- `forestay_tack_point = (x_f_tack, z_f_tack)`
-- `forestay_head_point = (x_f_head, z_f_head)`
+Inputs mínimos:
+- `I` (altura del punto de amantillo/estay sobre el mástil, según spec)
+- `J` (avance a proa desde la base del mástil al punto de amura del foque, según spec)
 
-MVP usando (I, J):
+Puntos (MVP):
 - `forestay_tack_point = (J, 0)`
-- `forestay_head_point = (0, I)`
+- `forestay_head_point = mast_base_point + I * dir_mast`  (importante: con rake aplicado)
 
-Con esto el ángulo del estay respecto al mástil queda determinado por:
-- `alpha = atan(J / I)`
+Con esto el ángulo del estay se deriva geométricamente.
 
 ## Cómo se aplican a las velas
 - La **mayor** se genera en su `sail frame` con luff vertical y luego se mapea a lo largo de la línea del mástil.
