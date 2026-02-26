@@ -57,14 +57,24 @@ A partir de J/70 Class Rules 2026, Sección G:
 
 **Importante**: el reglamento no entrega explícitamente foot/leech máximos en la tabla; el software debe definir un planform que respete las medidas existentes.
 
-### 4.3 Interpretación/Medición (ERS)
-Para automatizar cumplimiento, necesitamos un **módulo de medición** ("measurer"):
-- Dado un contorno 2D, computa las magnitudes reglamentarias (widths en leech points, longitudes de bordes, etc.).
-- MVP: implementar medición consistente con una convención explícita basada en ERS (aunque sea aproximación), y dejar trazado para implementar ERS literal.
+### 4.3 Interpretación/Medición (ERS) — LITERAL
+Para automatizar cumplimiento, necesitamos un **módulo de medición ERS literal** ("measurer"):
+- Dado un contorno 2D, computa magnitudes **según definiciones ERS**.
+
+Definiciones clave (ERS 2025–2028, Part 2):
+- `Head Point`, `Tack Point`, `Clew Point` (intersecciones de bordes extendidos si hace falta).
+- `Leech Length`: distancia **head→clew**.
+- `Half Leech Point`: punto en la baluma equidistante (por longitud de baluma) de head y clew.
+- `Three-Quarter Leech Point`: punto en la baluma equidistante (por longitud de baluma) de head y **half leech point**.
+- `Quarter Leech Point`: punto en la baluma equidistante (por longitud de baluma) de **half leech point** y clew.
+- `Upper Leech Point`: punto en la baluma a distancia especificada desde head (la clase puede redefinirlo; J/70 define un ULP particular para el "upper width").
+- `Quarter/Half/Three-Quarter Width` (mainsail + headsail): **distancia mínima** entre el leech point correspondiente y el grátil.
+- `Top Width` (mainsail + headsail): distancia entre `Head Point` y `Aft Head Point`.
+- `Luff Perpendicular (LP)`: distancia mínima entre `Clew Point` y el grátil.
 
 **Decisión de diseño**: el generador no asume que “estación en altura = leech point”. En lugar de eso:
 - define el planform,
-- **mide**,
+- **mide con ERS**,
 - ajusta parámetros (si hace falta) hasta cumplir.
 
 ## 5) Filosofía de parametrización (clave para ML)
@@ -226,6 +236,6 @@ MVP exitoso cuando:
 ---
 
 ## Próximas decisiones (para cerrar especificación)
-1) ¿MVP con medición ERS **aproximada** + tests, o implementamos ERS literal desde el inicio?
+1) **Decidido**: medición **ERS literal** desde el inicio (referencia: ERS 2025–2028).
 2) ¿Cuántas estaciones por altura y cuántos coeficientes por función (twist/camber/pos)?
 3) ¿Qué rango de camber (%) y twist (°) consideramos “válido” para dataset inicial?

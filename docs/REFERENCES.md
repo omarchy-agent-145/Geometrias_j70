@@ -10,6 +10,11 @@ Copia local usada durante el research (en el workspace del magíster):
 - `references/j70_class_rules/J70_Class_Rules_2026.pdf`
 - `references/j70_class_rules/J70_Class_Rules_2026_layout.txt`
 
+## ERS (Equipment Rules of Sailing) — medición literal
+
+- PDF (descargado): `docs/external/Equipment-Rules-of-Sailing-2025-2028.pdf`
+  - URL: https://d7qh6ksdplczd.cloudfront.net/sailing/wp-content/uploads/2024/06/29011153/Equipment-Rules-of-Sailing-2025-2028.pdf
+
 ## OpenFOAM / snappyHexMesh (input geometry)
 
 - Snappy geometry dictionary (formatos soportados, carpeta `constant/triSurface`):
