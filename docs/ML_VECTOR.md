@@ -20,6 +20,9 @@ Se exportan 2 vectores separados:
 Y opcionalmente (pipeline CFD):
 - `wind_params_hat`: condiciones de viento/operación
 
+## Qué NO entra al vector canónico
+- `rig_params` (I, J, mast rake, etc.) se usan para **posicionar** velas en el marco global CFD y se guardan en `manifest.json`/`ruleset.json`, pero no se incluyen en el vector canónico del surrogate (decisión de proyecto para mantener el diseño/trim desacoplados del aparejo).
+
 ## Normalización propuesta
 ### A) Planform (en metros → fracción del máximo reglamentario)
 Para cada magnitud reglamentaria con máximo \(x_{max}\):

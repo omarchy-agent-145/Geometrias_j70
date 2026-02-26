@@ -47,7 +47,9 @@ Usaremos dos marcos:
 La superficie media se genera inicialmente en el plano x–z (y=0) en el sail frame, luego se aplica espesor ±y.
 
 ### 3.2 Parámetros de aparejo (rig_params) para posicionamiento
-Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto el proyecto define un bloque `rig_params` (con defaults J/70 y documentados) que controla:
+Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto el proyecto define un bloque `rig_params` (con defaults J/70 y documentados) que controla el **posicionamiento**.
+
+**Decisión**: `rig_params` se considera **fijo** para un conjunto de experimentos y **no** forma parte del vector canónico de ML (se guarda como metadata para reproducibilidad).
 - Línea del mástil (incluye rake).
   - Inputs mínimos: `mast_base_point`, `mast_rake_deg`, `mast_len`.
   - Puntos derivados: `mast_tack_point` (=base) y `mast_head_point` (=base + mast_len·dir).
@@ -250,6 +252,7 @@ Cada muestra (planform + shape) debe producir:
 - `shape_params_deg_or_frac.json` (twist en °; camber/camber_pos como fracción de cuerda)
 - `shape_params_hat.json` (vector canónico para ML; ver `docs/ML_VECTOR.md`)
 - `wind_params.json` (cuando aplique en el pipeline CFD)
+- `rig_params.json` (siempre; fijo para posicionamiento)
 - `geometry_main.stl`, `geometry_jib.stl`
 - `measurements_main.json`, `measurements_jib.json` (ERS literal)
 - `manifest.json` (git commit, timestamp, rulesets, semilla)
