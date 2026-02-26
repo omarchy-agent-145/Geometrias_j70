@@ -19,7 +19,9 @@ Este documento existe para que la implementación sea **única** y reproducible.
 - **Nota:** en el vector canónico se recomienda usar `jib_clew_height_frac = jib_clew_height / jib_luff_len`.
 
 ### D4 — Mast rake
-- `mast_rake_deg` positivo hacia popa (+x) y **fijo** (solo posicionamiento, fuera del vector ML).
+- Convención de ejes: boat frame `x` hacia proa, `y` hacia babor, `z` hacia arriba (ver `docs/COORDINATES.md`).
+- `mast_rake_deg` **positivo hacia popa** (inclinación hacia **-x**).
+- `mast_rake_deg` es **fijo** (solo posicionamiento, fuera del vector ML).
 
 ## Abiertas (por cerrar)
 

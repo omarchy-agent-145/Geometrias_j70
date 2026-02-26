@@ -61,7 +61,9 @@ Las reglas de velas no fijan la posición relativa mástil–estay; por lo tanto
   - Puntos derivados: `mast_tack_point` (=base) y `mast_head_point` (=base + mast_len·dir).
 - Línea del estay de proa.
   - Inputs mínimos: `I`, `J`.
-  - Puntos derivados (MVP): `forestay_tack_point=(J,0)` y `forestay_head_point` como el punto sobre el mástil a distancia `I` desde la base (con rake aplicado).
+  - Puntos derivados (MVP): `forestay_tack_point=(J,0,0)` y `forestay_head_point` como el punto sobre el mástil a distancia `I` desde la base (con rake aplicado).
+
+Ver convención de ejes (boat frame) en `docs/COORDINATES.md`.
 - (Opcional) `gooseneck_height` si se quiere separar tack de mayor de la referencia z=0.
 
 Con esto, el ángulo del foque respecto al mástil **se deriva** geométricamente de esas dos líneas.

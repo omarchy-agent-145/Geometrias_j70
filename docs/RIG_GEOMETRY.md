@@ -19,23 +19,25 @@ En esa tabla aparecen (métrico):
 > Nota: estos valores se usan como **defaults** del aparejo. El proyecto debe permitir sobre-escribirlos en config.
 
 ## Modelo geométrico mínimo (boat frame)
+Ver convención de ejes en `docs/COORDINATES.md`.
+
 Definimos un modelo de rig simplificado por dos líneas:
 
 ### Mástil
 Inputs mínimos:
-- `mast_base_point = (x0, z0)`
+- `mast_base_point = (x0, y0, z0)`
 - `mast_len`
-- `mast_rake_deg` (positivo = mástil inclinado hacia popa, +x)
+- `mast_rake_deg` (**positivo hacia popa**, es decir inclinación hacia **-x**)
 
 Puntos derivados:
 - `mast_tack_point = mast_base_point`
 - `mast_head_point = mast_base_point + mast_len * dir_mast`
 
-con
-- `dir_mast = (sin(rake), cos(rake))` usando `rake = mast_rake_deg * π/180`.
+con (boat frame; ver `docs/COORDINATES.md`):
+- `dir_mast = (-sin(rake), 0, cos(rake))` usando `rake = mast_rake_deg * π/180`.
 
 MVP por defecto:
-- `mast_base_point = (0,0)`
+- `mast_base_point = (0,0,0)`
 - `mast_rake_deg = 0`
 
 ### Estay de proa (forestay/headstay)
@@ -44,7 +46,7 @@ Inputs mínimos:
 - `J` (avance a proa desde la base del mástil al punto de amura del foque, según spec)
 
 Puntos (MVP):
-- `forestay_tack_point = (J, 0)`
+- `forestay_tack_point = (J, 0, 0)`
 - `forestay_head_point = mast_base_point + I * dir_mast`  (importante: con rake aplicado)
 
 Con esto el ángulo del estay se deriva geométricamente.
