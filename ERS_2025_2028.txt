@@ -1,0 +1,2952 @@
+THE
+
+EQUIPMENT RULES
+OF
+
+SAILING
+for 2025-2028
+
+World Sailing
+
+World Sailing has an ambitious wide ranging sustainability strategy
+safeguarding the future of the sport whilst protecting the waters of the world.
+This was ratified in May 2018. Sustainability Agenda 2030 can be accessed
+here: https://www.sailing.org/about/Sustainability
+
+Contact Details for the World Sailing Executive Office:
+World Sailing, Office 401 4th Floor
+3 Shortlands
+London W6 8DA
+UK
+Email office@sailing.org
+www.sailing.org
+Published by World Sailing (UK) Ltd., London, UK
+© World Sailing Ltd.
+
+CONTENTS
+Introduction ....................................................................................................... 4
+
+Part 1 – Use of Equipment
+Section A – During an Event ............................................................................ 6
+Section B – While Racing ................................................................................. 7
+
+Part 2 – Definitions
+Section C – General Definitions ....................................................................... 8
+Section D – Hull Definitions ............................................................................ 15
+Section E – Hull Appendage Definitions ......................................................... 17
+Section F – Rig Definitions ............................................................................. 19
+Section G – Sail Definitions ............................................................................ 35
+Subsection A – Trilateral Sails ................................................................. 35
+Subsection B – Additions for Other Sails ................................................. 50
+
+Part 3 – Rules Governing Equipment Control and Inspection
+Section H – Equipment Control and Inspection .............................................. 53
+
+Appendix 1
+Racing Rules that govern the use of equipment .............................................. 57
+
+Appendix 2
+Abbreviations for primary sail dimensions ....................................................... 58
+Index of Defined Terms .................................................................................. 59
+
+INTRODUCTION
+The Equipment Rules of Sailing includes and references:
+•
+
+Rules for use of equipment.
+
+•
+
+Definitions of equipment, measurement points and measurements for
+use in class rules and other rules and regulations.
+
+•
+
+Rules governing certification control and equipment inspection.
+
+Applicability
+The ERS are invoked by:
+(a) Class Rules.
+(b) A notice of race and sailing instructions.
+(c) Prescriptions of an MNA for races under its jurisdiction.
+(d) World Sailing Regulations,
+(e) World Sailing Racing Rules of Sailing, or
+(f) Other documents that govern an event.
+ERS Parts A, B, C and H apply at all times, except as permitted by the rules
+themselves.
+ERS definitions marked with an asterisk (*) are optional for Classes approved
+by WS prior to 1997.
+Terminology
+A term used in its defined sense is printed in “bold” if defined in the ERS and in
+“italic” if defined in the RRS. The use of an ERS term in its defined sense may
+also be used in other forms of the word and shall refer to the original defined
+term. Other words and terms are used in the sense ordinarily understood in
+nautical or general use in English.
+Abbreviations
+MNA World Sailing Member National Authority
+ICA
+International Class Association or recognised Rating System
+NCA National Class Association
+ERS The Equipment Rules of Sailing
+RRS The Racing Rules of Sailing
+TC
+An Event Technical Committee as defined in Racing Rule 92.
+ER
+Equipment Regulations
+Revision
+The Equipment Rules are revised and published every four years by World
+Sailing, the international authority for the sport. This edition becomes effective
+on 1 January 2025 except that for an event beginning in 2024 the date may be
+postponed by the Notice of Race and Sailing Instructions. Changes to the
+Equipment Rules are permitted under World Sailing Regulations 29.1.1 and
+29.1.2. No changes are contemplated before 2028, but any changes
+determined to be urgent before then will be announced through National
+Authorities and posted on the World Sailing website (sailing.org).
+4
+
+INTRODUCTION
+Changes
+The ERS may only be changed as follows:
+(a) Prescriptions of an MNA may change a rule in ERS Part 1, for
+races under its jurisdiction.
+(b) Class rules may change ERS rules as permitted by rule A.1.
+These restrictions do not apply if rules are changed to develop or test proposed
+rules in local races. The MNA may prescribe that its approval is required for
+such changes.
+Marginal markings indicate substantial changes to the 2021 – 2024 edition.
+
+5
+
+PART 1 – USE OF EQUIPMENT
+In addition to the rules in Part 1, class rules and the Racing Rules of Sailing
+contain rules governing the use of equipment. Appendix 1 provides a list of
+those racing rules.
+
+Section A – During an Event
+A.1
+
+CLASS RULES
+Class rules may change rules B.1, B.2 and B.3.
+
+A.2
+
+CERTIFICATE
+
+A.2.1
+
+Having a Certificate
+The boat shall have a valid certificate as required by its class rules or
+the certification authority.
+
+A.2.2
+
+Compliance with a Certificate
+The boat shall comply with its certificate.
+See also RRS 78 Compliance with Class Rules; Certificates.
+
+6
+
+PART 1 – USE OF EQUIPMENT
+
+Section B – While Racing
+B.1
+
+POSITION OF EQUIPMENT
+
+B.1.1
+
+Mast Upper Limit Mark
+(a) TRILATERAL MAINSAIL
+The mainsail shall be set so that no visible part of it shall be higher
+than a line projected 90⁰ to the mast spar at the upper point.
+(b) QUADRILATERAL MAINSAIL
+The throat point, projected at 90⁰ the mast spar, shall not be set
+higher than the upper point.
+
+B.1.2
+
+Mast Lower Limit Mark
+When a sail is set on a main boom, foremast boom or mizzen boom,
+the extension of the upper edge of the spar shall intersect the mast
+spar above the mast lower limit mark, with the boom spar on the
+mast spar centreplane and at 90° to the mast spar.
+
+B.1.3
+
+Boom Outer Limit Mark
+The leech of any sail set on a boom, extended as necessary, shall
+intersect the upper edge of the boom spar forward of the boom outer
+point.
+
+B.1.4
+
+Bowsprit Outer Limit Mark
+The tack of any headsail set on a bowsprit shall be connected aft of
+the bowsprit outer point.
+
+B.1.5
+
+Bowsprit Inner Limit Mark
+The bowsprit inner point shall not be outboard of the hull when the
+bowsprit is set.
+
+B.2
+
+HEADSAIL BOOMS
+The fore end of a headsail boom shall be approximately on the boat
+centerplane.
+
+B.3
+
+SPINNAKER STAYSAILS AND MIZZEN STAYSAILS
+The tack of a spinnaker staysail or mizzen staysail shall be inboard the
+sheerline
+
+7
+
+PART 2 DEFINITIONS
+
+PART 2 – DEFINITIONS
+Section C – General Definitions
+C.1
+
+CLASS
+
+C.1.1
+
+Class Authority
+The body that governs the class as specified in the class rules.
+
+C.2
+
+RULES
+
+C.2.1
+
+Class Rules
+The rules that specify:
+the boat and its use, certification and administration.
+the crew.
+personal equipment and its use, certification and administration.
+portable equipment and its use, certification and administration.
+any other equipment and its use, certification and administration.
+changes to the Racing Rules of Sailing as permitted by RRS
+86.1(c).
+The term includes rules of handicap and rating systems.
+
+C.2.2
+
+Closed Class Rules
+Class rules where anything not specifically permitted by the class
+rules is prohibited.
+
+C.2.3
+
+Open Class Rules
+Class rules where anything not specifically prohibited by the class
+rules is permitted.
+
+C.2.4
+
+Class Rules Authority
+The body that provides final approval of the class rules, class rule
+changes and class rule interpretations.
+
+C.3
+
+CERTIFICATION
+
+C.3.1
+
+Certification Authority
+World Sailing, the MNA in the country where the certification shall take
+place, or their delegates.
+
+C.3.2
+
+Certify/Certification
+To issue a certificate, or apply a certification mark after successful
+certification control.
+
+8
+
+PART 2 DEFINITIONS
+C.3.3
+
+Certificate
+Documentary proof of successful certification control as required by
+the class rules or a certification authority.
+For the hull: issued by World Sailing, the MNA of the owner, or their
+delegates.
+For other items: issued by the certification authority.
+The term includes handicap and rating certificates.
+
+C.3.4
+
+Certification Mark
+Proof of successful certification control of a part requiring
+certification applied as required by the class rules or a certification
+authority.
+
+C.3.5
+
+Licensed Manufacturer’s Mark
+The mark required by class rules and used to indicate that equipment is
+produced by a licensed manufacturer.
+
+C.4
+
+CERTIFICATION CONTROL AND EQUIPMENT
+INSPECTION
+See also H.1 and H.2.
+
+C.4.1
+
+Fundamental Measurement
+The methods used as the primary means to establish the physical
+properties of equipment.
+
+C.4.2
+
+Certification Control
+The methods used as means of equipment control required by class
+rules, or a certification authority, for certification.
+
+C.4.3
+
+Event Equipment Inspection
+Control carried out by the TC at an event as required by the notice of
+race, the sailing instructions and/or the ER, which may include
+fundamental measurement.
+
+C.4.4
+
+Certification Measurer
+A person appointed or recognised, by the MNA of the country where the
+control takes place, to carry out certification control and when the
+class rules permit, certification. An MNA may have delegated this
+responsibility.
+
+C.4.5
+
+In-HouseCertification Measurer
+A person appointed to carry out certification control in accordance
+with the World Sailing In-House Certification Programme.
+
+C.4.6
+
+Equipment Inspector
+A person appointed by a TC to carry out equipment inspection.
+
+C.4.7
+
+Limit Mark
+A clearly visible permanent mark of a single colour, contrasting to the
+part(s) on which it is placed, indicating a measurement point.
+9
+
+PART 2 DEFINITIONS
+C.4.8
+
+Event Limitation Mark
+A mark permanently attached by a TC on equipment whose
+replacement at the event is controlled by the class rules.
+
+C.4.9
+
+Equipment Regulations (ER)
+Rules published by the TC that govern the event equipment
+inspection.
+
+C.5
+
+PERSONAL DEFINITIONS
+
+C.5.1
+
+Crew
+A competitor, or team of competitors, that operates a boat.
+
+C.5.2
+
+Helmsperson
+A crew member who helms a boat.
+
+C.5.3
+
+Personal Equipment
+All personal effects carried or worn and items worn on board to keep
+warm and/or dry, and/or to protect the body, personal flotation device,
+crew harness and hiking aids or safety equipment worn to keep the
+person aboard or afloat.
+
+C.5.4
+
+Personal Flotation Device
+Personal equipment as required by the rules to assist the user to float
+in water. Class rules or the World Sailing Offshore Special Regulations
+shall prescribe the required standards, if any.
+
+C.5.5
+
+Crew Harness
+Personal equipment worn to assist the crew to use a trapeze or to
+hike or to stay connected to a windsurf sail, a kite or a wingfoil.
+Class rules shall prescribe the required standards, if any.
+
+C.5.6
+
+Impact Vest
+Personal equipment designed to provide protection against impacts to
+the torso. Class rules shall prescribe the required standards, if any.
+
+C.6
+
+BOAT DEFINITIONS
+
+C.6.1
+
+Boat
+The equipment used by the crew to take part in a race.
+It includes:
+hull(s)
+structure(s) connecting hulls
+hull appendage(s)
+ballast
+rig
+sail(s)
+fittings
+boat corrector weights and
+all other items of equipment used
+10
+
+PART 2 DEFINITIONS
+but excludes
+consumables
+personal equipment and
+portable equipment.
+C.6.2
+
+Boat Types
+(a) MONOHULL
+A boat with one hull.
+(b) MULTIHULL
+A boat with more than one hull.
+(c) WINDSURFER
+A boat.
+(d) KITE-BOARD
+A boat.
+(e) WINGFOIL
+A boat.
+
+C.6.3
+
+Boat Control Definitions
+(a) MAJOR AXES
+The three major axes of the boat at 90° to each other – vertical,
+longitudinal and transverse – shall be related to the baseline and
+the hull centreplane.
+See H.3.
+(b) MEASUREMENT TRIM
+Trim achieved when two points on the hull(s) are at set distances
+perpendicular to a plane. The plane, the points and distances to be
+specified in class rules.
+(c) FLOTATION TRIM
+Trim achieved with the boat floating in accordance with H.7.1 –
+Conditions for Weight and Flotation Measurement.
+(d) WATERLINE
+The line(s) formed by the intersection of the outside of the hull(s)
+and the water surface when the boat is floating in measurement
+trim.
+(e) WATERPLANE
+The plane passing through the waterline.
+(f) BALLAST
+Weight installed to influence the stability, flotation, trim or total
+weight of the boat.
+Ballast types:
+(i) INTERNAL BALLAST
+Ballast positioned inside a hull.
+(ii) EXTERNAL BALLAST
+Ballast positioned outside a hull.
+(iii) MOVEABLE BALLAST
+11
+
+PART 2 DEFINITIONS
+Internal ballast or external ballast that may be moved.
+(iv) VARIABLE BALLAST
+Water ballast the amount of which may be varied and which
+may also be moved.
+(v) CORRECTOR WEIGHT
+Weight installed in accordance with the class rules to correct
+deficiency in weight and/or its distribution.
+(g) CONNECT
+To bring together or into contact so that a real link is established by
+which one item affects the function of the other; therefore includes
+“attached to” and “sheeted to” the corner of the sail.
+C.6.4
+
+Boat Dimensions
+(a) BOAT LENGTH
+The longitudinal distance between the aftermost point and the
+foremost point of the boat, excluding sails, with spars set as
+appropriate.
+See H.3.4.
+(b) BOAT BEAM
+The transverse distance between the outermost points of the boat.
+(c) WATERLINE LENGTH
+The longitudinal distance between the aftermost point and the
+foremost point of the waterline.
+(d) WATERLINE BEAM
+The transverse distance between the outermost points of the
+waterline.
+(e) DRAFT
+The vertical distance between the waterplane and the lowest point
+of the boat.
+(f) MINIMUM DRAFT
+The draft with all hull appendages in their highest position.
+(g) MAXIMUM DRAFT
+The draft with all hull appendages in their lowest position.
+(h) BOAT WEIGHT
+The weight of the boat excluding sail(s) and variable ballast.
+(i) LIST ANGLE
+The maximum angle of heel of the boat, measured relative to the
+boat floating upright, in the condition for weight and flotation
+measurement with moveable ballast moved fully to port or
+starboard.
+(j) HULL APPENDAGE DEPTH
+The maximum vertical distance between the hull shell or a
+measurement point as specified in the class rules and the lowest
+point of a hull appendage in its lowest position.
+
+12
+
+PART 2 DEFINITIONS
+C.6.5
+
+Boat Age
+(a) SERIES DATE
+The date on which the first boat of the design or the production
+series was first launched, whichever is earlier. Series Date does not
+change if the boat is modified.
+(b) AGE DATE
+The date on which the boat was first launched, or the date on
+which the boat was re-launched following any hull shell
+modification, excluding the transom, whichever is the later.
+
+C.6.6
+
+Portable Equipment
+Removable equipment permitted by class rules excluding:
+the boat,
+personal equipment, and
+consumables.
+Typical examples of portable equipment would include anchor and
+chain, mooring or towing lines, paddles, bailers, spare fittings and
+ropes.
+
+C.7
+
+BOAT MODIFICATIONS, MAINTENANCE AND REPAIR
+
+C.7.1
+
+Terms
+(a) INSTALLATION
+The bonding or fastening of a fitting directly to the boat. This
+may include the drilling of holes, when and where permitted,
+through which fasteners are attached.
+(b) FITTING
+An item, including any associated fitting, that is not part of the boat
+structure but is bonded or fastened to the hull, hull appendages or
+rig.
+(c) FASTENING
+To fix in place with bolts, screws, rivets or other suitable means.
+(d) BONDING
+To fix in place with glues, resins, sealants or other similar chemical
+agents.
+(e) COATING
+Application of an additional permanent layer or layers of a
+substance to a surface. This may require prior preparation of the
+surface which may involve sanding, etching, blasting, but not
+fairing.
+(f) SANDING
+Removal of the outermost surface through use of an abrasive
+material with or without a lubricating agent, which does not alter
+the shape but may remove localised irregularities or textures in the
+surface.
+(g) CLEANING
+13
+
+PART 2 DEFINITIONS
+The application and subsequent removal of detergents or similar
+agents, the purpose of which is to remove residue on the surface.
+(h) POLISHING
+The application of cutting compounds with or without a lubricating
+agent, in order to reduce surface roughness.
+(i) FAIRING
+The addition and/or removal of material to alter the shape.
+(j) LUBRICATING
+The application of non-permanent friction reducing compound.
+(k) SEALED IN POSITION
+Securing or locking something in place to prevent movement. The
+use of seals, stickers, or other marking devices to indicate if
+something has been moved.
+(l) SEALED CLOSED
+Locking something to prevent access. The use of seals, stickers, or
+other marking devices to indicate if something has been moved.
+C.7.2 Modification
+Work resulting in a change to the original condition.
+C.7.3 Maintenance
+Work required to retain the original condition, compensating for normal
+wear and tear in order to achieve its maximum useful life. This includes
+preventive maintenance and may include coating, sanding, lubricating,
+polishing and cleaning, but shall exclude fairing and bonding.
+C.7.4 Repair
+Corrective action, following unintended damage, required to restore the
+original condition and shape. This may include coating, sanding, fairing,
+polishing and bonding.
+
+14
+
+PART 2 DEFINITIONS
+
+Section D – Hull Definitions
+D.1
+
+HULL TERMS
+
+D.1.1
+
+Hull
+The hull shell including any transom, the deck including any
+superstructure, the internal structure including any cockpit, wings or
+racks, the fittings installed on these parts and any corrector weights.
+
+D.1.2
+
+Sheerline *
+The line formed by the intersection of the top of the deck and the
+outside of the hull shell, each extended as necessary.
+
+D.1.3
+
+Sheer
+The projection of the sheerline on the centreplane.
+
+D.2
+
+HULL MEASUREMENT POINTS
+
+D.2.1
+
+Hull Datum Point
+A point on the hull specified in the class rules from which hull
+measurements can be taken.
+
+D.3
+
+HULL DIMENSIONS
+
+D.3.1
+
+Hull Length
+The longitudinal distance between the aftermost point and the foremost
+point on the hull(s), excluding fittings.
+See H.3.4.
+
+15
+
+PART 2 DEFINITIONS
+
+D.3.2
+
+Hull Beam *
+The maximum transverse distance between the outermost points of the
+hull(s) excluding fittings.
+
+D.3.3
+
+Hull Depth
+The vertical distance between the waterplane and the lowest point of
+the hull.
+
+D.4
+
+WEIGHT
+
+D.4.1
+
+Hull Weight
+The weight of the hull.
+
+16
+
+PART 2 DEFINITIONS
+
+Section E – Hull Appendage Definitions
+E.1
+
+HULL APPENDAGE TERMS
+
+E.1.1
+
+Hull Appendage
+Any item of equipment – including the items listed in E.1.2– which is:
+wholly or partly below the sheerline or its extension when fixed or
+when fully exposed if retractable,
+attached to the hull shell or another hull appendage, and
+used to affect: stability, leeway, steerage, directional stability,
+motion damping, trim, displaced volume,
+Any of the following shall be included in the hull appendage:
+corrector weights,
+integral ballast, and
+associated fittings.
+
+E.1.2
+
+Hull Appendage Types
+(a) KEEL
+A fixed hull appendage, attached approximately on the hull
+centreplane, primarily used to affect stability and leeway.
+(b) BILGE KEEL
+A fixed hull appendage, attached off the hull centreplane,
+primarily used to affect stability and leeway.
+(c) CANTING KEEL
+A movable hull appendage primarily used to affect stability,
+attached approximately on the hull centreplane and rotating around
+a single longitudinal axis.
+(d) FIN
+A fixed hull appendage primarily used to affect leeway or
+directional control.
+(e) BULB
+A hull appendage containing ballast at the bottom of another hull
+appendage, primarily used to affect stability.
+(f) SKEG
+A fin attached immediately in front of a rudder.
+(g) CENTREBOARD
+A retractable hull appendage, attached approximately on the hull
+centreplane and rotating about a single transverse axis which may
+move in relation to the hull, primarily used to affect leeway.
+(h) DAGGERBOARD
+A retractable hull appendage, attached approximately on the hull
+centreplane and not rotating, primarily used to affect leeway.
+(i) BILGEBOARD
+
+17
+
+PART 2 DEFINITIONS
+A retractable hull appendage, attached off the hull centreplane,
+primarily used to affect leeway.
+(j) RUDDER
+A movable hull appendage primarily used to affect steerage.
+(k) TRIM TAB
+When a rudder(s) is used, a movable hull appendage, attached at
+the aft, or fore edge of another hull appendage.
+(l) WINGLET
+A hull appendage attached to a keel, bilge keel or bulb, primarily
+used to affect leeway and/or lift.
+(m) HYDROFOIL
+A hull appendage primarily used to affect leeway and/or produce
+vertical lift, which may incorporate any or all of the following:
+Fuselage,
+Foil mast,
+Elevator,
+Front wing,
+Rear wing.
+
+E.2
+
+HULL APPENDAGE MEASUREMENT DEFINITIONS
+
+E.2.1
+
+Hull Appendage Weight
+The weight of the hull appendage excluding any associated fittings.
+
+E.2.2
+
+Hull Appendage Assembly Weight
+The weight of the hull appendage including any associated fittings
+and other parts prescribed in class rules.
+
+E.2.3
+
+Wingspan
+The maximum transverse distance between the outermost points of any
+winglets or a hydrofoil.
+
+18
+
+PART 2 DEFINITIONS
+
+Section F – Rig Definitions
+F.1
+
+GENERAL RIG TERMS
+
+F.1.1
+
+Rig
+The spars, spreaders, rigging, fittings and any corrector weights.
+
+F.1.2
+
+Rig Configurations
+(a) UNA RIG
+A single-masted rig with a mainsail only.
+(b) SLOOP RIG
+A single-masted rig with a mainsail and one headsail.
+(c) CUTTER RIG
+A single-masted rig with more than one headsail.
+(d) KETCH RIG
+A two-masted rig with the the mainmast taller than the the
+mizzenmast set forward of the rudder stock.
+(e) YAWL RIG
+A two-masted rig with the mainmast taller than the the
+mizzenmast set aft of the rudder stock.
+(f) SCHOONER RIG
+A two-masted rig with the foremast shorter than, or the same
+height as, the mainmast.
+
+F.1.3
+
+Spar(s)
+The main structural part(s) of the rig to which sails are connected. It
+includes its fittings and any corrector weights.
+
+F.1.4
+
+Spar Types
+(a) MAST
+A spar on which the head or throat of a sail, or a yard, is
+connected. Includes its standing rigging, running rigging, and
+spreaders, but not running rigging and fittings that are not
+essential to the function of the mast as part of the rig.
+Mast Types:
+(i) MAINMAST
+(a) The only mast in a una rig, sloop rig or cutter rig.
+(b) The fore mast in a ketch rig or yawl rig.
+(c) The aft mast in a schooner rig.
+(ii) FOREMAST
+The fore mast in a schooner rig.
+(iii) MIZZENMAST
+The aft mast in a ketch rig or yawl rig.
+
+19
+
+PART 2 DEFINITIONS
+(b) BOOM
+A spar attached at one end to a mast spar or a hull and on which
+the clew of a sail is connected and on which the tack and/or foot
+of the sail may be connected. Includes its rigging, but not
+running rigging, running rigging blocks and/or any vang
+arrangement.
+Boom Types:
+(i) FOREMAST SAIL BOOM
+A boom attached to a foremast spar to connect a foremast
+sail.
+(ii) HEADSAIL BOOM
+A boom attached to a hull to connect a headsail clew.
+(iii) MAIN BOOM
+A boom attached to a mainmast spar to connect a mainsail.
+(iv) MIZZEN BOOM
+A boom attached to a mizzenmast spar to connect a mizzen.
+(v) WISHBONE BOOM
+A double boom attached to a mast spar to connect a sail and
+which has one spar on each side of the sail.
+(c) HULL SPARS
+A spar attached to the hull.
+(i) BOWSPRIT
+A hull spar extending forward to connect rigging and/or the
+tack of a headsail, headsails or a spinnaker.
+(ii) BUMKIN
+A hull spar extending aft of the hull to connect rigging.
+(iii) DECK SPREADER
+A hull spar extending transversely to connect standing
+rigging.
+(iv) OUTRIGGER
+A hull spar extending transversely connected to a sheet.
+(d) OTHER SPARS
+Other spar types include their rigging, but not running rigging.
+Other Spar Types:
+(i) SPINNAKER POLE
+A spar attached to the mast spar and connected to a
+spinnaker guy.
+(ii) WHISKER POLE
+A spar attached to the mast spar and connected to a
+headsail clew.
+(iii) GAFF
+A spar attached at one end to a mast spar to connect the
+peak, throat and/or head of a quadrilateral sail.
+(iv) SPRIT
+20
+
+PART 2 DEFINITIONS
+A spar attached at one end to a mast spar or a hull to
+connect only the peak of a quadrilateral sail.
+(v) YARD
+A spar hoisted on a mast spar at a point between its ends to
+connect the head of a quadrilateral sail or the luff of a lateen
+sail.
+(vi) BAR
+A spar to connect and control a kite.
+(vii) JOCKEY POLE
+A spar attached to the hull or mast spar, extending
+transversely and connected to a spinnaker guy.
+F.1.5
+
+Spreader
+Equipment used to brace a spar, attached at one end to the spar and
+connected at the other end to standing rigging, working in
+compression when in use.
+
+F.1.6
+
+Rigging
+Any equipment attached and/or connected at one or both ends to
+spars, sails or other rigging and capable of working in tension only.
+Includes associated fittings which are not permanently fixed to a hull,
+spar or spreader.
+
+F.1.7
+
+Rigging Types
+(a) STANDING RIGGING
+Rigging used to support a mast spar or hull spar. It may be
+adjustable but is not detached when racing except as below:
+Standing Rigging types:
+(i) SHROUD
+Rigging used to provide transverse support for a mast spar or
+hull spar and which may also provide longitudinal support.
+(ii) STAY
+Rigging mainly used to provide longitudinal support for a mast
+spar or hull spar or a sail which may be detached while racing.
+(iii) FORESTAY
+Rigging used to provide forward support for a mast spar.
+(b) RUNNING RIGGING
+Rigging primarily used to adjust a spar, a sail or a hull
+appendage.
+Running Rigging types:
+(i) HALYARD
+Rigging used to hoist a sail, spar, flag or a combination
+thereof.
+(ii) BACKSTAY
+Rigging mainly used to provide aft support for a mast spar
+above the upper limit mark.
+21
+
+PART 2 DEFINITIONS
+(iii) RUNNING BACKSTAY
+Rigging used to provide aft support for a mast spar at a point,
+or points, between the upper limit mark and the forestay
+rigging point.
+(iv) CHECKSTAY
+Rigging used to provide aft support for a mast spar at a point,
+or points, between the lower limit mark and the forestay
+rigging point.
+(v) OUTHAUL
+Rigging used to trim the clew of a sail along a boom spar.
+(vi) SHEET
+Rigging used to trim the clew of a sail, or a boom spar.
+(vii) SPINNAKER GUY
+Rigging used to trim the tack of a spinnaker.
+(viii) FLYING LINES
+Rigging used to trim a kite.
+(ix) FRONT LINES
+Flying lines used to transfer the power from a kite to the crew.
+(x) BACK LINES
+Flying lines used for steering a kite.
+(xi) VANG
+Equipment connected to the boom and used to control the
+angle between the mast and the boom. The term includes
+Gnav variations.
+(c) OTHER RIGGING
+(i) TRAPEZE
+Rigging attached to a mast spar used to support a single crew
+member.
+F.1.8
+
+Foretriangle
+The area formed by the foreside of the foremost mast spar, the
+foremost forestay and the deck including any superstructure.
+
+F.1.9
+
+Limit Mark Width
+The minimum width measured in the length direction of the spar.
+
+F.2
+
+MAST MEASUREMENT DEFINITIONS
+
+F.2.1
+
+Mast Limit Marks
+(a) LOWER LIMIT MARK
+The limit mark for the setting of a boom spar or sail.
+(b) UPPER LIMIT MARK
+The limit mark for the setting of a sail.
+
+F.2.2
+
+Mast Measurement Points
+(a) MAST DATUM POINT
+
+22
+
+PART 2 DEFINITIONS
+The point on the mast specified in the class rules used as a datum
+for measurement.
+(b) HEEL POINT
+The lowest point on the spar and its fittings.
+
+(c) TOP POINT
+The highest point on the spar and its fittings.
+(d) LOWER POINT
+The highest point of the lower limit mark at the aft edge of the
+spar.
+(e) UPPER POINT
+The lowest point of the upper limit mark at the aft edge of the
+spar.
+F.2.3
+
+Mast Dimensions
+See H.4.
+(a) MAST LENGTH
+The distance between the heel point and the top point.
+(b) LOWER POINT HEIGHT
+The distance between the mast datum point and the lower point.
+(c) UPPER POINT HEIGHT
+The distance between the mast datum point and the upper point.
+(d) MAINSAIL LUFF MAST DISTANCE
+The distance between the lower point and the upper point.
+(e) RIGGING POINT *
+When rigging is attached:
+BY HOOK TERMINAL: The lowest point of the hook where it
+intersects the spar, extended as necessary.
+BY TANG WITH THROUGH FIXING: The lowest point of the
+spar through fixing where it intersects the spar.
+IN OTHER WAYS: The intersection of the outside of the spar,
+extended as necessary, and the centreline of the rigging.
+
+23
+
+PART 2 DEFINITIONS
+
+(f) FORESTAY HEIGHT *
+The distance between the mast datum point and the rigging
+point or the top point whichever is the lowest.
+
+(g) SHROUD HEIGHT *
+The distance between the mast datum point and the rigging
+point.
+
+24
+
+PART 2 DEFINITIONS
+
+(h) BACKSTAY HEIGHT *
+The distance between the mast datum point and the rigging
+point or the top point whichever is the lowest.
+(i) CHECKSTAY HEIGHT *
+The distance between the mast datum point and the rigging
+point.
+(j) TRAPEZE HEIGHT *
+The distance between the mast datum point and the rigging
+point.
+(k) HEADSAIL HOIST HEIGHT *
+The distance between the mast datum point and the intersection
+of the spar and the lower edge of the headsail halyard, when at
+90° to the spar, each extended as necessary.
+(l) SPINNAKER HOIST HEIGHT *
+The distance between the mast datum point and the intersection
+of the spar and the lower edge of the spinnaker halyard, when at
+90° to the spar, each extended as necessary.
+
+(m) MAST SPAR CURVATURE
+The greatest distance between the spar and a straight line from the
+upper point to the lower point taken at 90° to the straight line
+when the spar is resting on one side.
+25
+
+PART 2 DEFINITIONS
+
+(n) MAST SPAR DEFLECTION
+The difference in distance, at a specified distance from the mast
+datum point, between
+the spar
+and a straight line from the upper point to the lower point
+taken at 90° to the straight line with and without a specified load at
+the specified distance when the spar is horizontal at and supported
+at these points.
+(i) FORE-AND-AFT: Measured with the aft edge up.
+(ii) TRANSVERSE: Measured with one side up.
+See H.4.5.
+
+26
+
+PART 2 DEFINITIONS
+
+(o) MAST SPAR CROSS SECTION
+(i) FORE-AND-AFT: The fore-and-aft dimension, including any
+sail track, at a specified distance from the mast datum point.
+(ii) TRANSVERSE: The transverse dimension, at a specified
+distance from the mast datum point.
+
+(p) MAST WEIGHT
+The weight of the mast.
+(q) MAST TIP WEIGHT
+The weight at the upper point when the mast is horizontal and
+supported at the lower point.
+See H.4.6.
+
+27
+
+PART 2 DEFINITIONS
+
+(r) MAST CENTRE OF GRAVITY HEIGHT
+The distance from the mast datum point to centre of gravity of the mast.
+
+F.2.4
+
+Mast Fittings
+(a) SPREADER *
+(i) LENGTH: The distance between the inner edge of the shroud
+at the lower edge of the spreader and the intersection of the
+lower edge of the spreader, extended as necessary, and the
+mast spar.
+
+28
+
+PART 2 DEFINITIONS
+
+(ii) HEIGHT: The distance between mast datum point and the
+intersection of the lower edge of the spreader, extended as
+necessary, and the mast spar.
+
+(b) SPINNAKER POLE FITTING
+(i) HEIGHT: The distance between the mast datum point and the
+centre of the highest bearing part of the fitting.
+(ii) PROJECTION: The shortest distance between the outermost
+point of the fitting and the mast spar.
+
+29
+
+PART 2 DEFINITIONS
+
+F.3
+
+BOOM MEASUREMENT DEFINITIONS
+
+F.3.1
+
+Boom Measurement Points
+(a) OUTER POINT
+The point on the boom outer limit mark, at the upper edge of the
+boom spar, nearest the fore end of the spar.
+
+F.3.2
+
+Boom Limit Marks
+(a) OUTER LIMIT MARK
+The limit mark for the setting of a mainsail, foresail or mizzen.
+
+F.3.3
+
+Boom Dimensions
+See H.4.
+(a) OUTER POINT DISTANCE
+The distance between the outer point and the aft edge of the mast
+spar, with the boom spar on the mast spar centreplane and at 90°
+to the mast spar.
+
+(b) BOOM SPAR CURVATURE
+The greatest distance between the spar and a straight line from the
+uppermost fore end of the spar to the outer point or, where there
+is no outer point, to the uppermost aft end of the spar, taken at
+90° to the straight line when the spar is resting on one side.
+
+(c) BOOM SPAR DEFLECTION
+The difference in distance, at a specified distance from the outer
+point, between
+the spar
+30
+
+PART 2 DEFINITIONS
+and a straight line from the outer point to the top of the fore
+end of the spar
+taken at 90° to the straight line and with and without a specified
+load at the specified distance when the spar is horizontal and
+supported at these points.
+(i) VERTICAL: Measured with the top edge up.
+(ii) TRANSVERSE: Measured with one side up.
+See H.4.5.
+
+(d) BOOM SPAR CROSS SECTION
+(i) VERTICAL: The vertical dimension, including any sail track, at
+a specified distance from the outer point.
+(ii) TRANSVERSE: The transverse dimension at a specified
+distance from the outer point.
+
+(e) BOOM WEIGHT
+The weight of the boom.
+31
+
+PART 2 DEFINITIONS
+
+F.4
+
+SPAR MEASUREMENT DIMENSIONS
+See H.4.
+(a) SPAR LENGTH
+The distance between the ends of the spar.
+(b) SPAR CROSS SECTION
+The sectional dimensions at specified distances from an end of the
+spar.
+
+(c) SPAR WEIGHT
+The weight of the spar.
+
+F.5
+
+BOWSPRIT MEASUREMENT DEFINITIONS
+
+F.5.1
+
+Bowsprit Measurement Points
+(a) BOWSPRIT INNER POINT
+The point of the bowsprit inner limit mark, at the upper edge of
+the spar, nearest the outboard end of the spar.
+(b) BOWSPRIT OUTER POINT
+The point of the bowsprit outer limit mark, at the upper edge of
+the spar, nearest the inner end of the spar, or the outboard end of
+the spar when there is no outer limit mark.
+
+F.5.2
+
+Bowsprit Limit Marks
+(a) BOWSPRIT INNER LIMIT MARK
+The limit mark for the setting of the spar.
+(b) BOWSPRIT OUTER LIMIT MARK
+The limit mark for the setting of a headsail.
+
+F.5.3
+
+Bowsprit Dimensions
+See H.4.
+(a) BOWSPRIT POINT DISTANCE
+The distance between the bowsprit inner point and the bowsprit
+outer point.
+32
+
+PART 2 DEFINITIONS
+
+(b) BOWSPRIT SPAR CROSS SECTION
+The sectional dimensions at specified positions.
+(c) BOWSPRIT WEIGHT
+The weight of the bowsprit.
+
+F.6
+
+FORETRIANGLE MEASUREMENT DEFINITIONS
+
+F.6.1
+
+Foretriangle Dimensions
+(a) FORETRIANGLE BASE
+The longitudinal distance between the intersection of the fore side
+of the mast spar, extended as necessary, and the deck including
+any superstructure, and the intersection of the centreline of the
+forestay, extended as necessary, and the deck, or bowsprit spar.
+See H.3.4.
+
+(b) FORETRIANGLE HEIGHT
+The distance between the intersection of the sheer and the fore
+side of the mast spar, extended as necessary, and the forestay
+rigging point.
+See H.4.
+
+33
+
+PART 2 DEFINITIONS
+
+(c) FORETRIANGLE AREA
+Half the product of the foretriangle base and the foretriangle
+height.
+
+F.7
+
+SAIL SETTING MEASUREMENT DEFINITIONS
+
+F.7.1
+
+Spinnaker Tack Distance
+The maximum longitudinal distance from the fore side of the mast spar
+to the end of the longest spinnaker pole or the bowsprit outer point
+measured on or near the boat centreplane; or the longitudinal distance
+from the fore side of the mast spar, extended as necessary, and the
+deck including any superstucture, forward to the spinnaker tack point
+on deck; whichever is the greatest.
+
+34
+
+PART 2 DEFINITIONS
+
+Section G – Sail Definitions
+Subsection A – Trilateral Sails
+Definitions relating to sails with only three sail edges:
+“MAINSAIL” also applies to foremast sail and mizzen.
+“HEADSAIL” also applies to “jib”, “genoa” and “solent”.
+“SPINNAKER” applies to symmetric and asymmetric (“gennaker”)
+sails .
+
+G.1
+
+GENERAL SAIL TERMS
+
+G.1.1
+
+Sail
+An item of equipment, used to propel the boat. It includes any of the
+following added parts:
+sail reinforcements
+batten pockets and associated fittings
+windows
+stiffening
+tabling
+sail edge ropes and wires
+attachments
+other parts as permitted by class rules.
+
+G.1.2
+
+Set Flying
+A sail set with no sail edge attached to the rig.
+
+G.1.3
+
+Sail Types
+(a) MAINSAIL
+A sail with the luff attached to the mainmast spar. The lowest of
+the sails if more than one sail with the luff set to that spar.
+(b) FOREMAST SAIL
+A sail with the luff attached to the foremast spar. The lowest of
+the sails if more than one sail with the luff set to that spar.
+(c) MIZZEN
+A sail with the luff attached to the mizzenmast spar. The lowest of
+the sails if more than one sail with the luff set to that spar.
+(d) HEADSAIL
+A sail set forward of the mast spar or of the foremost mast spar if
+more than one mast, where the measurement between the half
+luff point and the half leech point is less than 75% of the foot
+length.
+(e) KITE
+A sail connected to the bar.
+
+35
+
+PART 2 DEFINITIONS
+
+(f) SPINNAKER
+A sail set forward of the mast spar or of the foremost mast spar if
+more than one mast, where the measurement between the half
+luff point and the half leech point is equal or greater than 75% of
+the foot length.
+G.1.4
+
+Sail Construction
+(a) BODY OF THE SAIL
+The sail excluding the areas where parts are added as per G.1.1.
+(b) PLY
+A sheet of sail material.
+(c) SOFT SAIL
+A sail where the body of the sail is capable of being folded flat in
+any direction without damaging any ply other than by creasing.
+(d) WOVEN PLY
+A ply which, when torn, can be separated into fibres without leaving
+evidence of a film.
+(e) LAMINATED PLY
+A ply made up of more than one layer.
+(f) SINGLE-PLY SAIL
+A sail, except at seams, where all parts of the body of the sail
+consist of only one ply.
+(g) DOUBLE LUFF SAIL
+A sail with more than one luff, or a sail passing around a spar and
+attached back on itself.
+(h) SEAM
+Overlap where two or more ply forming the body of the sail are
+joined.
+(i) DART
+An overlap formed at a sail edge by overlapping the ply edges of a
+cut in the body of the sail.
+(j) TUCK
+Overlap where a ply is folded and joined.
+(k) BATTEN POCKET
+Ply to form a pocket for a batten.
+(l) SAIL OPENING
+Any opening other than openings created by attachments or
+batten pockets.
+(m) WINDOW
+A predominantly transparent ply in the body of the sail.
+(n) STIFFENING
+Corner boards and battens.
+36
+
+PART 2 DEFINITIONS
+(o) ATTACHMENTS
+cringles
+straps
+hanks
+slides
+adjustment eyes
+adjustment points
+reefing eyes
+reefing points, and
+blocks and their fastenings.
+See H.5.3.
+(p) SAIL EDGE SHAPE
+The shape of a sail edge as a comparison with a straight line
+between
+corner points or,
+in the case of a leech other than of a gennaker or spinnaker,
+between the clew point and the aft head point.
+
+G.2
+
+SAIL EDGES
+
+G.2.1
+
+Foot
+The bottom edge.
+
+G.2.2
+
+Leech
+The aft edge.
+
+G.2.3
+
+Luff
+The fore edge.
+
+G.2.4
+
+Sail Leech Hollow
+Concavity in the shape of a leech between
+adjacent batten pockets, or
+a batten pocket and the adjacent corner point, or
+in the case of a mainsail, foremast sail, mizzen or a headsail
+other than a spinnaker or a gennaker, between the aft head point
+and the adjacent batten pocket.
+
+G.3
+
+SAIL CORNERS
+
+G.3.1
+
+Clew
+The region where the foot and the leech meet.
+
+G.3.2
+
+Head
+The region at the top.
+
+G.3.3
+
+Tack
+The region where the luff and the foot meet.
+37
+
+PART 2 DEFINITIONS
+
+G.4
+
+SAIL CORNER MEASUREMENT POINTS *
+
+G.4.1
+
+Clew Point
+The intersection of the foot and the leech, each extended as necessary
+to bridge a cut-out or a rounded corner.
+
+G.4.2
+
+Head Point
+(a) MAINSAIL: The intersection of the luff, extended as necessary,
+and the line through the highest point of the sail at 90° to the luff.
+(b) HEADSAIL: The intersection of the luff, extended as necessary,
+and the line at 90° to the luff passing through the highest point of
+the sail excluding attachments and any luff tape / tabling.
+(c) SPINNAKER: The intersection of the luff and the leech, extended
+as necessary to bridge a cut-out or a rounded corner.
+
+38
+
+PART 2 DEFINITIONS
+Headsail Head Point
+
+Luff Tape
+
+Aft Head Point
+Head Point
+
+G.4.3
+
+Tack Point
+The intersection of the foot and the luff, each extended as necessary
+to bridge a cut-out or a rounded corner.
+
+G.5
+
+OTHER SAIL MEASUREMENT POINTS
+
+G.5.1
+
+Quarter Leech Point
+The point on the leech equidistant from the half leech point and the
+clew point.
+
+G.5.2
+
+Half Leech Point
+The point on the leech equidistant from the head point and the clew
+point.
+
+G.5.3
+
+Three-Quarter Leech Point
+The point on the leech equidistant from the head point and the half
+leech point.
+
+G.5.4
+
+Seven-Eighths Leech Point
+The point on the leech equidistant from the head point and the threequarter leech point.
+
+39
+
+PART 2 DEFINITIONS
+G.5.5
+
+Upper Leech Point
+The point on the leech at a specified distance from the head point.
+
+G.5.6
+
+Aft Head Point *
+MAINSAIL and HEADSAIL: The intersection of the leech extended as
+necessary to bridge a cut-out or a rounded corner and the line through
+the head point at 90° to the luff.
+
+G.5.7
+
+Quarter Luff Point
+The point on the luff equidistant from the half luff point and the tack
+point.
+
+G.5.8
+
+Half Luff Point
+The point on the luff equidistant from the head point and the tack
+point.
+
+G.5.9
+
+Three-Quarter Luff Point
+The point on the luff equidistant from the head point and the half luff
+point.
+
+G.5.10 Seven-Eighths Luff Point
+The point on the luff equidistant from the head point and the threequarter luff point.
+40
+
+PART 2 DEFINITIONS
+G.5.11 Upper Luff Point
+The point on the luff at a specified distance from the head point.
+G.5.12 Mid Foot Point
+The point on the foot equidistant from the tack point and the clew
+point.
+
+G.6
+
+SAIL REINFORCEMENT
+
+G.6.1
+
+Primary Reinforcement
+An unrestricted number of additional layers of ply of permitted material:
+at a corner
+at a adjustment point
+at a reefing point adjacent to the luff
+at a reefing point adjacent to the leech
+at a sail recovery point
+where permitted by the class rules
+
+G.6.2
+
+Secondary Reinforcement
+Not more than two additional layers of ply of permitted material each
+not thicker than the maximum thickness of the ply of the body of the
+sail:
+at a corner
+at an adjustment point
+at a reefing point
+at a sail recovery point
+to form a flutter patch
+to form a chafing patch
+to form a batten pocket patch
+where permitted by the class rules
+
+41
+
+PART 2 DEFINITIONS
+
+G.6.3
+
+Tabling
+Additional ply and/or folded ply overlap(s) at a sail edge.
+
+G.6.4
+
+Batten Pocket Patch
+Secondary reinforcement at an end of a batten pocket.
+
+G.6.5
+
+Chafing Patch
+Secondary reinforcement where a sail can touch a spreader,
+stanchion, shroud or spinnaker pole.
+
+G.6.6
+
+Flutter Patch
+Secondary reinforcement on the leech or the foot at the end of a
+seam.
+
+G.7
+
+PRIMARY SAIL DIMENSIONS
+See H.5.
+
+G.7.1
+
+Foot Length
+The distance between the clew point and the tack point.
+
+G.7.2
+
+Leech Length
+The distance between the head point and the clew point.
+
+G.7.3
+
+Luff Length
+The distance between the head point and the tack point.
+
+42
+
+PART 2 DEFINITIONS
+
+G.7.4
+
+Quarter Width
+(a) MAINSAIL and HEADSAIL: The shortest distance between the
+quarter leech point and the luff.
+(b) SPINNAKER: The distance between the quarter luff point and the
+quarter leech point.
+
+G.7.5
+
+Half Width
+(a) MAINSAIL and HEADSAIL: The shortest distance between the half
+leech point and the luff.
+(b) SPINNAKER: The distance between the half luff point and the
+half leech point.
+
+G.7.6
+
+Three-Quarter Width
+(a) MAINSAIL and HEADSAIL: The shortest distance between the
+three-quarter leech point and the luff.
+(b) SPINNAKER: The distance between the three-quarter luff point
+and three-quarter leech point.
+
+G.7.7
+
+Seven-Eighths Width
+(a) MAINSAIL and HEADSAIL: The shortest distance between the
+seven-eighths leech point and the luff.
+(b) SPINNAKER: The distance between the seven-eighths leech
+point and the seven-eighths luff point.
+
+G.7.8
+
+Upper Width
+(a) MAINSAIL and HEADSAIL: The shortest distance between the
+upper leech point and the luff.
+(b) SPINNAKER: The distance between the upper luff point and the
+upper leech point.
+
+G.7.9
+
+Top Width
+(a) MAINSAIL and HEADSAIL: The distance between the head point
+and the aft head point.
+
+43
+
+PART 2 DEFINITIONS
+
+G.7.10 Diagonals
+(a) CLEW DIAGONAL: The distance between the clew point and the
+half luff point.
+(b) TACK DIAGONAL: The distance between the tack point and the
+half leech point.
+
+G.7.11 Foot Median
+The distance between the head point and the mid foot point.
+
+44
+
+PART 2 DEFINITIONS
+
+G.7.12 Luff Perpendicular
+The shortest distance between the clew point and the luff.
+
+45
+
+PART 2 DEFINITIONS
+
+G.7.13 Spinnaker Half Girth *
+The distance between a point on the luff/leech and a point on the
+spinnaker centreline, both of those points at specified distances from
+the head point.
+
+G.8
+
+OTHER SAIL DIMENSIONS
+See H.5.
+
+G.8.1
+
+Batten Pocket Length
+(a) INSIDE: The greatest distance between the sail edge and the
+internal extreme end of the batten pocket, measured parallel to the
+pocket centreline. The effect of any elastic or other retaining device
+and any local widening for batten insertion shall be ignored.
+(b) OUTSIDE: The greatest distance between the sail edge and the
+external extreme end of the batten pocket, measured parallel to
+the pocket centreline. The effect of any local widening for batten
+insertion shall be ignored.
+
+G.8.2
+
+Batten Pocket Width
+(a) INSIDE: The greatest distance between inside edges of the batten
+pocket measured at 90° to pocket centreline. Local widening for
+batten insertion shall be ignored.
+(b) OUTSIDE: The greatest distance between the outside edges of the
+batten pocket measured at 90° to the pocket centreline. Local
+widening for batten insertion shall be ignored.
+
+G.8.3
+
+Foot Irregularity
+The maximum distance between the edges of the foot when first the
+tack point and then the clew point are superimposed on any part of
+the foot.
+
+46
+
+PART 2 DEFINITIONS
+
+G.8.4
+
+Reinforcement Size
+(a) AT A CORNER: The greatest distance measured from the sail
+corner measurement point.
+(b) TABLING WIDTH: The width of tabling measured at 90° to the sail
+edge.
+(c) ELSEWHERE: The greatest dimension of the sail reinforcement.
+
+G.8.5
+
+Seam Width
+The width of a seam measured at 90° to the seam.
+
+G.8.6
+
+Dart Width
+The width of a dart measured at 90° to the dart centreline.
+47
+
+PART 2 DEFINITIONS
+G.8.7
+
+Tuck Width
+The width of a tuck measured at 90° to the tuck centreline.
+
+G.8.8
+
+Attachment Size
+(a) AT A CORNER OR AN EDGE
+(i) LENGTH
+AT THE HEAD: The dimension from the head point along the
+luff or its extension to a line through the highest point of the
+attachment at 90o to the luff.
+AT THE TACK: The dimension from the tack point along the
+luff or its extension to a line through the lowest point of the
+attachment at 90o to the luff.
+AT THE CLEW: The greatest dimension from the clew point.
+AT AN EDGE: The greatest dimension from the sail edge.
+(ii) WIDTH
+The greatest dimension measured perpendicular to the length.
+(b) ELSEWHERE
+The greatest dimension of the attachment.
+
+G.8.9
+
+Window Ply Area
+The area of the window ply.
+
+48
+
+PART 2 DEFINITIONS
+G.8.10 Window Area
+The window ply area excluding seams.
+Window Area and Window Ply Area
+
+Window Area
+
+Window Ply Area
+
+49
+
+PART 2 DEFINITIONS
+
+Subsection B – Additions for Other Sails
+The following definitions for non-trilateral sails are additional to or vary those
+given in Subsection A of this Section. Sails are to be considered as
+Quadrilateral only when they are set on a gaff, sprit or yard.
+
+G.2
+
+SAIL EDGES
+
+G.2.5
+
+Head
+The top edge.
+
+G.3
+
+SAIL CORNERS
+
+G.3.4
+
+Peak
+The region where the head and the leech meet.
+
+G.3.5
+
+Throat
+The region where the head and the luff meet.
+
+G.4
+
+SAIL CORNER MEASUREMENT POINTS *
+
+G.4.4
+
+Peak Point
+The intersection of the head and leech, each extended as necessary to
+bridge a cut-out or a rounded corner.
+
+G.4.5
+
+Throat Point
+The intersection of the head and luff, each extended as necessary to
+bridge a cut-out or a rounded corner.
+
+50
+
+PART 2 DEFINITIONS
+
+G.5
+
+OTHER SAIL MEASUREMENT POINTS
+
+G.5.2
+
+Half Leech Point
+The point on the leech equidistant from the peak point and the clew
+point.
+
+G.5.3
+
+Three-Quarter Leech Point
+The point on the leech equidistant from the peak point and the half
+leech point.
+
+G.5.4
+
+Seven-Eighths Leech Point
+The point on the leech equidistant from the peak point and the threequarter leech point.
+
+G.5.5
+
+Upper Leech Point
+The point on the leech a specified distance from the peak point.
+
+G.5.8
+
+Half Luff Point
+The point on the luff equidistant from the peak point and the tack
+point.
+
+G.5.9
+
+Three-Quarter Luff Point
+The point on the luff equidistant from the peak point and the half luff
+point.
+
+G.5.10 Seven-Eighths Luff Point
+The point on the luff equidistant from the peak point and the threequarter luff point.
+
+G.7
+
+PRIMARY SAIL DIMENSIONS
+See H.5.
+
+G.7.2
+
+Leech Length
+The distance between the peak point and the clew point.
+
+G.7.3
+
+Luff Length
+The distance between the throat point and the tack point.
+
+G.7.10 Diagonals
+(a) CLEW DIAGONAL
+The distance between the clew point and the throat point.
+(b) TACK DIAGONAL
+51
+
+PART 2 DEFINITIONS
+The distance between the tack point and the peak point.
+G.7.11 Foot Median
+The distance between the peak point and the mid foot point.
+G.7.13 Head Length
+The distance between the peak point and the throat point.
+
+52
+
+PART 3 – RULES GOVERNING EQUIPMENT
+CONTROL AND INSPECTION
+Section H – Equipment Control and Inspection
+H.1
+
+CERTIFICATION CONTROL
+
+H.1.1
+
+Certification measurers shall not carry out certification control of
+any part of a boat owned, designed or built by themselves, or in which
+they are an interested party, or have a vested interest.
+If a certification measurer is in any doubt as to the application of, or
+compliance with, the class rules the question shall be referred to the
+certification authority before signing a certification control form or
+applying a certification mark.
+Certification measurers carry out certification control in another
+country only if they are appointed or recognised as such by the MNA for
+that country.
+
+H.1.2
+
+H.1.3
+
+H.2
+
+EQUIPMENT INSPECTION
+
+H.2.1
+
+If an equipment inspector is in any doubt as to the application of, or
+compliance with, the class rules, the question should be referred to the
+class rules authority.
+
+H.3
+
+MEASUREMENT AXES
+
+H.3.1
+
+For a boat, unless otherwise specified, words such as “fore”, “aft”,
+“above”, “below”, “height”, “depth”, “length”, “beam”, “freeboard”,
+“inboard” and “outboard” shall be taken to refer to the boat in
+measurement trim. All measurements denoted by these, or similar
+words, shall be taken parallel to one of the three major axes.
+For a component, unless otherwise specified, width, thickness, length
+etc. shall be measured as appropriate for that component, if relevant
+without reference to the major axes.
+Unless otherwise specified, a measurement shall be the shortest
+distance between the respective measurement points.
+Unless otherwise specified, longitudinal measurements shall be taken
+parallel to the longitudinal major axis.
+
+H.3.2
+
+H.3.3
+H.3.4
+
+53
+
+PART 3 RULES GOVERNING EQUIPMENT CONTROL AND INSPECTION
+
+H.4
+
+RIG MEASUREMENT
+
+H.4.1
+
+Measurements in the length direction shall be taken along the spar at
+the side relevant for the measurement and between sectional planes
+through the measurement points at 90° to the spar at each point.
+
+H.4.2
+
+Fittings, local curvature and local cut away, shall be ignored when
+measuring a spar or dimensions taken to a spar.
+No external pressure shall be applied to a spar when measuring unless
+specifically prescribed.
+Adjustable fittings shall be set in the position that gives the greatest
+value when the measurement is taken.
+Mast spar deflection and boom spar deflection shall be checked with
+free ends of rigging not supported by the spar.
+Mast tip weight shall be checked with any halyards fully hoisted and
+with tails on the lower limit mark and rigging pulled taut and tied to
+the spar at the lower limit mark.
+
+H.4.3
+H.4.4
+H.4.5
+H.4.6
+
+H.4.7
+
+Mast centre of gravity height shall be checked with any halyards fully
+hoisted and with tails on the lower limit mark and rigging pulled taut
+and tied to the spar as close to the lower point as possible.
+
+54
+
+PART 3 RULES GOVERNING EQUIPMENT CONTROL AND INSPECTION
+
+H.5
+
+SAIL MEASUREMENT
+
+H.5.1
+
+Condition of the Sail
+For measurement the sail shall:
+(a) be dry,
+(b) not be attached to spars or rigging,
+(c) unless the class rules prescribe otherwise, have all battens
+removed,
+(d) have pockets of any type flattened out,
+(e) have just sufficient tension applied to remove wrinkles across
+the line of the measurement being taken,
+(f) have only one measurement taken at a time and
+(g) be weighed with all attachments.
+
+H.5.2
+
+Hollows in Sail Leeches
+Where there is a sail leech hollow and a measurement point falls in
+the hollow:
+between adjacent batten pockets
+between the aft head point and adjacent batten pocket
+between the clew point and adjacent batten pocket
+at an attachment.
+the sail shall be flattened out in the area of the sail edge, the sail edge
+hollow shall be bridged by a straight line and the shortest distance from
+the measurement point to the straight line shall be measured. This
+distance shall be added to the measurement being taken.
+
+H.5.3
+
+Excluding Attachments
+Attachments at a sail edge, other than a bolt rope and tabling, shall
+be excluded when measuring.
+
+H.5.4
+
+Extended as necessary
+When there is a cut-out or rounded corner in the sail edges at the
+clew, tack, peak, throat, spinnaker head or an aft head point, the
+corner point shall be found by extending the sail edges as necessary
+to bridge the cut-out or rounded corner.
+55
+
+PART 3 RULES GOVERNING EQUIPMENT CONTROL AND INSPECTION
+(a) A uniform thickness batten may be used for that purpose,
+placed along each sail edge and bent in a way to match the
+curve of the sail edge up to the start of the cut-out or the
+rounded corner.
+(b) When the cut-out is not clearly defined and a repeatable corner
+point cannot be found, ERS H.1.2 shall apply. The certification
+control may be suspended until the sail cut-out is made clear
+to the satisfaction of the certification measurer.
+(c) Batten specifications may be prescribed in class rules.
+(d) Class Rules may vary ERS H.5.4
+H.5.5
+
+Spinnaker Half Girth Measurement
+The spinnaker shall be folded along its centreline with the luff on top of
+the leech.
+
+H.6
+
+CHECKING MATERIALS
+Materials are subject to certification control only if specifically
+prescribed by the Class Rules.
+
+H.7
+
+BOAT MEASUREMENT
+
+H.7.1
+
+Conditions for Weight and Flotation Measurement
+The boat shall:
+be dry.
+be in compliance with the class rules.
+Unless otherwise specified in the rules, any of the following shall be
+included:
+rig including spinnaker pole(s), whisker poles and/or jockey
+pole
+main sheet and mizzen sheet,
+vang,
+inboard engine or outboard engine in stowed position,
+fitted berth cushions on board in their normal positions,
+all permanent fixtures and fittings and items of accommodation.
+Unless otherwise specified in the rules, any of the following shall be
+excluded:
+sails
+fuel, water, variable ballast or the content of any other tanks,
+gas bottles
+portable safety equipment
+and all other unfitted or loose equipment.
+
+56
+
+APPENDIX 1
+The following rules in The RRS govern equipment, the use of equipment and
+changes to and compliance with class rules:
+1
+Safety
+6.1
+World Sailing Regulations
+40
+Personal Flotation Devices
+42
+Propulsion
+45
+Hauling Out; Making Fast; Anchoring
+47
+Trash Disposal
+48
+Limitations on Equipment and Crew
+49
+Crew Position; Lifelines
+50
+Competitor Clothing and Equipment
+51
+Movable Ballast
+52
+Manual Power
+53
+Skin Friction
+54
+Forestays and Headsail Tacks
+55
+Setting and Sheeting Sails
+56
+Fog Signals and Lights; Traffic Separation Schemes
+60.5(d)
+Decisions on Protests Concerning Class Rules
+77
+Identification on Sails
+78
+Compliance with Class Rules; Certificates
+87
+Changes to Class Rules
+Appendix G – Identifications on Sails
+Appendix H – Weighing Clothing and Equipment
+Note that racing rule 86.1 permits some of these racing rules to be changed by
+prescriptions of a national authority, notice of race or sailing instructions or
+class rules.
+Appendices G and H of the RRS and the World Sailing Advertising Code are
+made applicable by racing rules 77, 50 and 6.1 respectively. That code and
+those appendices contain rules governing equipment. Certain rules in the
+International Regulations for Preventing Collisions at Sea (IRPCAS) or
+applicable government rules are made applicable by racing rule 56, and certain
+specifications in the World Sailing Offshore Special Regulations are made
+applicable by racing rule 49.
+
+57
+
+APPENDIX 2
+Abbreviations for primary sail dimensions:
+ERS Rule Reference
+Mainsail
+G.7.4 (a)
+G.7.5 (a)
+G.7.6 (a)
+G.7.8 (a)
+G.7.9 (a)
+Headsail
+G.7.3
+G.7.4 (a)
+G.7.5 (a)
+G.7.6 (a)
+G.7.8 (a)
+G.7.9 (a)
+G.7.12
+Spinnaker
+G.7.3
+G.7.2
+G.7.1
+G.7.5 (b)
+Quadrilateral G.7.2
+Mainsail
+G.7.13
+G.7.1
+G.7.10 (a)
+
+Dimension
+Mainsail Quarter Width
+Mainsail Half Width
+Mainsail Three-Quarter Width
+Mainsail Upper Width
+Mainsail Top Width
+Headsail Luff Length
+Headsail Quarter Width
+Headsail Half Width
+Headsail Three-Quarter Width
+Headsail Upper Width
+Headsail Top Width
+Headsail Luff Perpendicular
+Spinnaker Luff Length
+Spinnaker Leech Length
+Spinnaker Foot Length
+Spinnaker Half Width
+Leech Length
+Head Length
+Foot Length
+Clew Diagonal
+
+58
+
+Abbreviation
+MQW
+MHW
+MTW
+MUW
+MHB
+HLU
+HQW
+HHW
+HTW
+HUW
+HHB
+HLP
+SLU
+SLE
+SFL
+SHW
+QLE
+QHL
+QFL
+QCD
+
+INDEX OF DEFINITIONS
+Defined Term
+A
+Aft Head Point
+Age Date
+Attachment Size
+Attachments
+B
+Back Lines
+Backstay
+Backstay Height
+Ballast
+Bar
+Batten Pocket
+Batten Pocket Length
+Batten Pocket Patch
+Batten Pocket Width
+Bilge Keel
+Bilgeboard
+Boat
+Boat Beam
+Boat Length
+Boat Weight
+Body of the Sail
+Bonding
+Boom
+Boom Spar Cross
+Section
+Boom Spar
+Curvature
+Boom Spar
+Deflection
+Boom Weight
+Bowsprit
+Bowsprit Inner Limit
+Mark
+Bowsprit Inner Point
+Bowsprit Outer Limit
+Mark
+Bowsprit Outer Point
+Bowsprit Point
+Distance
+Bowsprit Spar Cross
+Section
+
+Rule
+
+Bowsprit Weight
+Bulb
+Bumkin
+C
+Canting Keel
+Centreboard
+Certificate
+Certification
+Certification Authority
+Certification Control
+Certification Mark
+Certification
+Measurer
+Certify
+Chafing Patch
+Checkstay
+Checkstay Height
+Class Authority
+Class Rules
+Class Rules Authority
+Cleaning
+Clew
+Clew Diagonal
+Clew Point
+Closed Class Rules
+Coating
+Connect
+Corrector Weight
+Crew
+Crew Harness
+Cutter Rig
+D
+Daggerboard
+Dart
+Dart Width
+Deck Spreader
+Double Luff Sail
+Draft
+E
+Equipment Inspector
+Equipment
+Regulations
+
+G.5.6
+C.6.5 (b)
+G.8.8
+G.1.4 (o)
+F.1.7 (b) (x)
+F.1.7 (b) (ii)
+F.2.3 (h)
+C.6.3 (f)
+F.1.4 (d) (vi)
+G.1.4 (k)
+G.8.1
+G.6.4
+G.8.2
+E.1.2 (b)
+E.1.2 (i)
+C.6.1
+C.6.4 (b)
+C.6.4 (a)
+C.6.4 (h)
+G.1.4 (a)
+C.7.1 (d)
+F.1.4 (b)
+F.3.3 (d)
+F.3.3 (b)
+F.3.3 (c)
+F.3.3 (e)
+F.1.4 (c) (i)
+F.5.2 (a)
+F.5.1 (a)
+F.5.2 (b)
+F.5.1 (b)
+F.5.3 (a)
+F.5.3 (b)
+59
+
+F.5.3 (c)
+E.1.2 (e)
+F.1.4 (c) (ii)
+E.1.2 (c)
+E.1.2 (g)
+C.3.3
+C.3.2
+C.3.1
+C.4.2
+C.3.4
+C.4.4
+C.3.2
+G.6.5
+F.1.7 (b) (iv)
+F.2.3 (i)
+C.1.1
+C.2.1
+C.2.4
+C.7.1 (g)
+G.3.1
+G.7.10 (a)
+G.4.1
+C.2.2
+C.7.1 (e)
+C.6.3 (g)
+C.6.3 (f) (v)
+C.5.1
+C.5.5
+F.1.2 (c)
+E.1.2 (h)
+G.1.4 (i)
+G.8.6
+F.1.4 (c) (iii)
+G.1.4 (g)
+C.6.4 (e)
+C.4.6
+C.4.9
+
+INDEX OF DEFINITIONS
+Defined Term
+Event Equipment
+Inspection
+Event Limitation
+Mark
+External Ballast
+F
+Fairing
+Fastening
+Fin
+Fitting
+Flotation Trim
+Flutter Patch
+Flying Lines
+Foot
+Foot Irregularity
+Foot Length
+Foot Median
+Foremast
+Foremast Sail
+Foremast Sail Boom
+Forestay
+Forestay Height
+Foretriangle
+Foretriangle Area
+Foretriangle Base
+Foretriangle Height
+Front Lines
+Fundamental
+Measurement
+G
+Gaff
+H
+Half Leech Point
+Half Luff Point
+Half Width
+Halyard
+Head
+Head (Other Sails)
+Head Length
+Head Point
+Headsail
+Headsail Boom
+
+Rule
+
+Headsail Hoist
+Height
+Heel Point
+Helmsperson
+Hull
+Hull Appendage
+Hull Appendage
+Assembly Weight
+Hull Appendage
+Depth
+Hull Appendage
+Weight
+Hull Beam
+Hull Datum Point
+Hull Depth
+Hull Length
+Hull Spars
+Hull Weight
+Hydrofoil
+I
+Impact Vest
+In-House
+Certification
+Measurer
+Installation
+Internal Ballast
+J
+Jockey Pole
+K
+Keel
+Ketch Rig
+Kite
+Kite-Board
+L
+Laminated Ply
+Leech
+Leech Length
+Licensed
+Manufacturer’s Mark
+Limit Mark
+Limit Marks Width
+List Angle
+Lower Limit Mark
+Lower Point
+
+C.4.3
+C.4.8
+C.6.3 (f) (ii)
+C.7.1 (i)
+C.7.1 (c)
+E.1.2 (d)
+C.7.1 (b)
+C.6.3 (c)
+G.6.6
+F.1.7 (b) (viii)
+G.2.1
+G.8.3
+G.7.1
+G.7.11
+F.1.4 (a) (ii)
+G.1.3 (b)
+F.1.4 (b) (i)
+F.1.7 (a) (iii)
+F.2.3 (f)
+F.1.8
+F.6.1 (c)
+F.6.1 (a)
+F.6.1 (b)
+F.1.7 (b) (ix)
+C.4.1
+F.1.4 (d) (iii)
+G.5.2
+G.5.8
+G.7.5
+F.1.7 (b) (i)
+G.3.2
+G.2.5
+G.7.13
+G.4.2
+G.1.3 (d)
+F.1.4 (b) (ii)
+
+60
+
+F.2.3 (k)
+F.2.2 (b)
+C.5.2
+D.1.1
+E.1.1
+E.2.2
+C.6.4 (j)
+E.2.1
+D.3.2
+D.2.1
+D.3.3
+D.3.1
+F.1.4 (c)
+D.4.1
+E.1.2 (m)
+C.5.6
+C.4.5
+C.7.1 (a)
+C.6.3 (f) (i)
+F.1.4 (d) (vii)
+E.1.2 (a)
+F.1.2 (d)
+G.1.3 (e)
+C.6.2 (d)
+G.1.4 (e)
+G.2.2
+G.7.2
+C.3.5
+C.4.7
+F.1.9
+C.6.4 (i)
+F.2.1 (a)
+F.2.2 (d)
+
+INDEX OF DEFINITIONS
+Defined Term
+Lower Point Height
+Lubricating
+Luff
+Luff Length
+Luff Perpendicular
+M
+Main Boom
+Mainmast
+Mainsail
+Mainsail Luff Mast
+Distance
+Maintenance
+Major Axes
+Mast
+Mast Centre of
+Gravity Height
+Mast Datum Point
+Mast Length
+Mast Spar Cross
+Section
+Mast Spar Curvature
+Mast Spar Deflection
+Mast Tip Weight
+Mast Weight
+Maximum Draft
+Measurement Trim
+Mid Foot Point
+Minimum Draft
+Mizzen
+Mizzen Boom
+Mizzenmast
+Modification
+Monohull
+Moveable Ballast
+Multihull
+O
+Open Class Rules
+Outer Limit Mark
+Outer Point
+Outer Point Distance
+Outhaul
+Outrigger
+
+Rule
+F.2.3 (b)
+C.7.1 (j)
+G.2.3
+G.7.3
+G.7.12
+
+P
+Peak
+Peak Point
+Personal Equipment
+Personal Flotation
+Device
+Ply
+Polishing
+Portable Equipment
+Primary
+Reinforcement
+Q
+Quarter Leech Point
+Quarter Luff Point
+Quarter Width
+R
+Reinforcement Size
+Repair
+Rig
+Rigging
+Rigging Point
+Rudder
+Running Backstay
+Running Rigging
+S
+Sail
+Sail Corner
+Sail Edge
+Sail Edge Shape
+Sail Leech Hollow
+Sail Opening
+Sail Reinforcement
+Sanding
+Schooner Rig
+Sealed Closed
+Sealed in Position
+Seam
+Seam Width
+Secondary
+Reinforcement
+Series Date
+Set Flying
+Seven-Eighths Leech
+Point
+
+F.1.4 (b) (iii)
+F.1.4 (a) (i)
+G.1.3 (a)
+F.2.3 (d)
+C.7.3
+C.6.3 (a)
+F.1.4 (a)
+F.2.3 (r)
+F.2.2 (a)
+F.2.3 (a)
+F.2.3 (o)
+F.2.3 (m)
+F.2.3 (n)
+F.2.3 (q)
+F.2.3 (p)
+C.6.4 (g)
+C.6.3 (b)
+G.5.12
+C.6.4 (f)
+G.1.3 (c)
+F.1.4 (b) (iv)
+F.1.4 (a) (iii)
+C.7.2
+C.6.2 (a)
+C.6.3 (f) (iii)
+C.6.2 (b)
+C.2.3
+F.3.2 (a)
+F.3.1 (a)
+F.3.3 (a)
+F.1.7 (b) (v)
+F.1.4 (c) (iv)
+
+61
+
+G.3.4
+G.4.4
+C.5.3
+C.5.4
+G.1.4 (b)
+C.7.1 (h)
+C.6.6
+G.6.1
+G.5.1
+G.5.7
+G.7.4
+G.8.4
+C.7.4
+F.1.1
+F.1.6
+F.2.3 (e)
+E.1.2 (j)
+F.1.7 (b) (iii)
+F.1.7 (b)
+G.1.1
+G.3
+G.2
+G.1.4 (p)
+G.2.4
+G.1.4 (l)
+G.6
+C.7.1 (f)
+F.1.2 (f)
+C.7.1 (l)
+C.7.1 (k)
+G.1.4 (h)
+G.8.5
+G.6.2
+C.6.5 (a)
+G.1.2
+G.5.4
+
+INDEX OF DEFINITIONS
+Defined Term
+Seven-Eighths Luff
+Point
+Seven-Eighths Width
+Sheer
+Sheerline
+Sheet
+Shroud
+Shroud Height
+Single-Ply Sail
+Skeg
+Sloop Rig
+Soft Sail
+Spar
+Spar Cross Section
+Spar Length
+Spar Weight
+Spinnaker
+Spinnaker Guy
+Spinnaker Half Girth
+Spinnaker Hoist
+Height
+Spinnaker Pole
+Spinnaker Pole
+Fitting
+Spinnaker Tack
+Distance
+Spreader
+Spreader Length
+Spreader Height
+Sprit
+Standing Rigging
+Stay
+Stiffening
+T
+Tabling
+Tabling Width
+Tack
+Tack Diagonal
+Tack Point
+Three-Quarter Leech
+Point
+Three-Quarter Luff
+Point
+
+Rule
+
+Three-Quarter Width
+Throat
+Throat Point
+Top Point
+Top Width
+Trapeze
+Trapeze Height
+Trim Tab
+Tuck
+Tuck Width
+U
+Una Rig
+Upper Leech Point
+Upper Limit Mark
+Upper Luff Point
+Upper Point
+Upper Point Height
+Upper Width
+
+G.5.10
+G.7.7
+D.1.3
+D.1.2
+F.1.7 (b) (vi)
+F.1.7 (a) (i)
+F.2.3 (g)
+G.1.4 (f)
+E.1.2 (f)
+F.1.2 (b)
+G.1.4 (c)
+F.1.3
+F.4 (b)
+F.4 (a)
+F.4 (c)
+G.1.3 (f)
+F.1.7 (b) (vii)
+G.7.13
+
+G.7.6
+G.3.5
+G.4.5
+F.2.2 (c)
+G.7.9
+F.1.7 (c) (i)
+F.2.3 (j)
+E.1.2 (k)
+G.1.4 (j)
+G.8.7
+F.1.2 (a)
+G.5.5
+F.2.1 (b)
+G.5.11
+F.2.2 (e)
+F.2.3 (c)
+G.7.8
+
+V
+
+Vang
+Variable Ballast
+
+F.2.3 (l)
+
+F.1.7 (b) (xi)
+C.6.3 (f) (iv)
+
+W
+
+F.1.4 (d) (i)
+
+Waterline
+Waterline Beam
+Waterline Length
+Waterplane
+Whisker Pole
+Window
+Window Area
+Window Ply Area
+Windsurfer
+Wingfoil
+Winglet
+Wingspan
+Wishbone boom
+Woven Ply
+
+F.2.4 (b)
+F.7.1
+F.1.5
+F.2.4 (a) (i)
+F.2.4 (a) (ii)
+F.1.4 (d) (iv)
+F.1.7 (a)
+F.1.7 (a) (ii)
+G.1.4 (n)
+G.6.3
+G.8.3 (b)
+G.3.3
+G.7.10 (b)
+G.4.3
+
+C.6.3 (d)
+C.6.4 (d)
+C.6.4 (c)
+C.6.3 (e)
+F.1.4 (d) (ii)
+G.1.4 (m)
+G.8.10
+G.8.9
+C.6.2 (c)
+C.6.2 (e)
+E.1.2 (l)
+E.2.3
+F.1.4 (b) (v)
+G.1.4 (d)
+
+Y
+
+Yard
+Yawl Rig
+
+G.5.3
+G.5.9
+
+62
+
+F.1.4 (d) (v)
+F.1.2 (e)
+
+

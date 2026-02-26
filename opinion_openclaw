@@ -1,0 +1,194 @@
+Análisis Crítico: Geometrias J70
+
+  Veredicto General
+
+  El objetivo central es factible. La generación paramétrica de geometrías de velas en STL para CFD es un problema técnicamente resuelto. Sin embargo,
+  hay decisiones de diseño cuestionables, simplificaciones no declaradas que afectan el alcance real del modelo ML, y una brecha de especificación
+  crítica entre la generación de geometría y el pipeline CFD→surrogate.
+
+  ---
+  Lo que está bien hecho
+
+  Arquitectura de separación de concerns
+
+  La división en tres capas (planform 2D → flying shape 3D → posicionamiento rig) es arquitectónicamente sólida. Permite variar cada capa
+  independientemente, lo cual es exactamente lo que necesitas para un dataset ML con estructura.
+
+  ERS-literal
+
+  Comprometerse a implementar las medidas tal como las define la ERS es correcto. Cualquier aproximación en las medidas regulatorias crea ambigüedad en
+  si las geometrías son válidas o no.
+
+  Reproducibilidad
+
+  El manifest.json con git commit, seed, y ruleset version es excelente práctica de ingeniería de datos científicos.
+
+  Offset de espesor por normal
+
+  Usar ±thickness/2 en dirección normal (no ±y constante) es la decisión correcta. El offset naïve por eje y crearía distorsiones en zonas de alta
+  curvatura y superficies no planas.
+
+  ---
+  Problemas y Decisiones Cuestionables
+
+  1. Perfil de curvatura (camber line) – Subparametrizado
+
+  El problema: La spec usa camber(η) y camber_pos(η) por sección. Son 2 parámetros por sección. Esto es insuficiente para describir la aerodinámica con
+  precisión.
+
+  Un perfil de vela real necesita al menos:
+  - Draft (% cuerda) ✓ tienes
+  - Posición del draft ✓ tienes
+  - Ángulo de entrada (leading edge angle)
+  - Ángulo de salida (trailing edge angle)
+
+  Los ángulos de entrada/salida controlan separación de flujo, stall, y la interacción con el slot mainsail-jib. Sin ellos, el surrogate no puede
+  aprender relaciones aerodinámica relevantes.
+
+  Recomendación: Añadir entry_angle(η) y exit_angle(η) o equivalentemente usar una representación de 4 parámetros por sección (como hace XFOIL o la
+  parametrización PARSEC).
+
+  ---
+  2. Twist – Definición ambigua
+
+  El problema: El spec dice que twist(η) es "rotación alrededor del luff local". Pero ¿respecto a qué referencia?
+
+  En diseño de velas, el twist se mide como la diferencia de ángulo de cuerda entre la sección en η y la sección en η=0 (pujamen). Si el
+  main_boom_angle_deg define la orientación en η=0, ¿el twist es adicional a eso, o absoluto?
+
+  Esto no está especificado y crea ambigüedad directa en la implementación. Con la definición actual puedes tener dos interpretaciones que producen
+  geometrías completamente diferentes.
+
+  Recomendación: Declarar explícitamente: twist(η) es el ángulo de cuerda medido desde el plano x-z (boat frame), y twist(0) = main_boom_angle_deg por
+  definición.
+
+  ---
+  3. Dimensionalidad del vector ML – Problema no resuelto
+
+  El problema: La spec propone representar twist(η), camber(η), camber_pos(η) con "4-6 knots de spline". Pero la longitud del vector ML debe ser fija. Si
+   algunos samples usan 4 knots y otros 6, el dataset es inconsistente.
+
+  Un vector ML de longitud variable no puede alimentarse directamente a ninguna red neuronal estándar sin padding o arquitecturas especiales.
+
+  Recomendación: Fijar en la spec la dimensión exacta del vector. Si se usan 5 knots por curva, para 3 curvas por vela y 2 velas = 30 parámetros de shape
+   solos. Hay que decidirlo y documentarlo, no dejarlo abierto.
+
+  ---
+  4. El problema de la dimensionalidad del espacio de entrada
+
+  Contando los parámetros aproximadamente:
+  - Planform mainsail: 8 parámetros
+  - Planform jib: 7 parámetros
+  - Shape mainsail (twist+camber+camber_pos, 5 knots c/u): 15 parámetros
+  - Shape jib: 15 parámetros
+  - Pose: 2 parámetros
+  - Mast bend: 1 parámetro
+
+  Total: ~48 parámetros de entrada
+
+  Para un surrogate con 48 dimensiones, 1000 samples (lo que menciona el spec) es extremadamente escaso. La maldición de la dimensionalidad hace que 1000
+   puntos en un espacio de 48 dimensiones estén todos muy lejos entre sí. Para surrogates precisos en dimensiones altas generalmente se necesitan:
+  - 10-100× más samples que dimensiones como mínimo
+  - O reducción de dimensionalidad activa (PCA, análisis de sensibilidad)
+  - O muestreo adaptativo/activo (active learning)
+
+  El spec no aborda el costo computacional del CFD. Una simulación 3D de velas en OpenFOAM puede tomar horas. 1000 simulaciones = potencialmente semanas
+  de cómputo en HPC.
+
+  Recomendación: Incluir en la spec:
+  - Estimación de costo por simulación CFD
+  - Presupuesto total de simulaciones
+  - Estrategia de reducción de dimensionalidad previa al surrogate (¿PCA sobre shapes? ¿análisis de sensibilidad global?)
+
+  ---
+  5. Interacción mainsail-jib – No especificada para CFD
+
+  El problema crítico: El spec genera mainsail y jib como geometrías independientes. Pero en una simulación CFD de un velero:
+
+  - El slot entre mainsail y jib es aerodinámica mente el elemento más importante
+  - La posición relativa de ambas velas (separación del slot, overlapping) determina en gran medida la fuerza propulsiva
+  - El jib_sheet_angle_deg y el main_boom_angle_deg deben estar coordinados para un setup válido
+
+  El spec no define cómo se exportan ambas geometrías juntas para CFD. ¿Se ponen en el mismo archivo STL? ¿Cómo se define la separación física entre
+  ambas en el boat frame?
+
+  Esto no es un detalle de implementación — afecta directamente si el surrogate aprende algo útil. Un surrogate que solo ve una vela a la vez no puede
+  modelar la interacción de slot.
+
+  ---
+  6. El modelo de mast bend es demasiado simplista
+
+  mast_bend_x(ζ) = amp · sin(πζ) con un solo parámetro de amplitud tiene problemas:
+
+  1. La flexión real del mástil no es sinusoidal — depende de la posición de los spreaders y las crucetas
+  2. Un mástil puede tener múltiples modos de flexión (S-bend)
+  3. La flexión no es simétrica respecto a la mitad del mástil
+
+  Para un MVP esto puede ser aceptable, pero hay que declararlo explícitamente como simplificación con impacto en la validez física.
+
+  ---
+  7. Luff curve – Omisión con consecuencias
+
+  El spec pospone luff_curve (curvatura del grátil) al post-MVP. Esto es más problemático de lo que parece:
+
+  La curvatura del grátil es el mecanismo principal que crea la forma 3D volando a partir del corte 2D de la vela. Sin ella, la flying shape 3D que el
+  spec genera (directamente por twist/camber por sección) no tiene correspondencia física con cómo se fabrica o ajusta una vela real.
+
+  Para el propósito de CFD+surrogate esto puede ser aceptable (generas formas aerodinámicamente significativas aunque no físicamente realizables por
+  trim), pero hay que declararlo claramente: el modelo no genera formas que correspondan a velas físicamente recortadas, sino a formas aerodinámicas
+  parametrizadas directamente.
+
+  ---
+  8. El pipeline CFD está especificado demasiado vagamente
+
+  El spec menciona snappyHexMesh y OpenFOAM, pero no especifica:
+
+  - ¿Qué mide el CFD? ¿Fuerza propulsiva? ¿Par de escora? ¿Cl/Cd por vela? El surrogate necesita outputs definidos.
+  - ¿Qué condiciones de viento? TWA, TWS, AWA, AWS — los wind_params están marcados como "opcionales" en el spec, pero para un surrogate de rendimiento
+  son obligatorios.
+  - ¿Cuál es la condición de contorno? ¿Flujo libre (sin ola)? ¿Con superficie libre? ¿Con el casco?
+  - ¿Qué modelo de turbulencia? k-ω SST es estándar para velas, pero determina el meshing requirements.
+  - ¿Resolución del mesh? Las velas son objetos de espesor 0.002 m y span ~8 m. La relación de aspecto del mesh para resolver la capa límite en objetos
+  tan delgados es un problema numérico serio para snappyHexMesh.
+
+  Sin estas definiciones, el dataset generado podría ser inútil porque no está claro qué está modelando el CFD ni qué aprende el surrogate.
+
+  ---
+  Resumen de Problemas por Severidad
+
+  ┌──────────────────────────────────────────┬───────────┬─────────────────────────────────────────────┐
+  │                 Problema                 │ Severidad │                   Impacto                   │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ CFD outputs no definidos                 │ Crítico   │ El surrogate no tiene qué predecir          │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Interacción mainsail-jib no modelada     │ Crítico   │ El CFD más importante es el slot            │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Dimensionalidad del vector ML no fija    │ Alto      │ Dataset inconsistente para ML               │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Subespecificación de perfil de curvatura │ Alto      │ Reduce capacidad aerodinámica del surrogate │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Costo computacional no estimado          │ Alto      │ 1000 sims 3D puede no ser feasible          │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Twist sin referencia clara               │ Medio     │ Ambigüedad de implementación                │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Mast bend model simplista                │ Bajo      │ Aceptable para MVP si se documenta          │
+  ├──────────────────────────────────────────┼───────────┼─────────────────────────────────────────────┤
+  │ Luff curve omitida                       │ Bajo      │ Aceptable si se declara la simplificación   │
+  └──────────────────────────────────────────┴───────────┴─────────────────────────────────────────────┘
+
+  ---
+  ¿Es factible lo que se propone?
+
+  La generación de geometrías paramétricas STL: Sí, completamente factible y bien especificado el camino.
+
+  El pipeline CFD con snappyHexMesh para superficies delgadas: Factible pero subestimado en dificultad. Necesitas especificar layers de mesh en la capa
+  límite explícitamente.
+
+  El surrogate ML con el dataset generado: Factible en principio, pero el spec actual tiene brechas que harían el dataset potencialmente inutilizable:
+  - No se definen los outputs del CFD
+  - El espacio de parámetros puede ser demasiado grande para el presupuesto de simulaciones
+  - La interacción entre velas no está modelada
+
+  Recomendación prioritaria: Antes de implementar el generador, cerrar la especificación del lado CFD: qué simula, qué mide, qué condiciones, y cuántas
+  simulaciones son realistas con los recursos disponibles. Eso determina si el diseño del vector ML (dimensionalidad, qué parámetros incluir) tiene
+  sentido.

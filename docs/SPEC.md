@@ -1,4 +1,4 @@
-# SPEC — Geometrias_j70 (Generador paramétrico de velas J/70)
+P# SPEC — Geometrias_j70 (Generador paramétrico de velas J/70)
 
 ## 0) Propósito
 Construir un generador **100% Python** capaz de crear la geometría 3D completa de:
