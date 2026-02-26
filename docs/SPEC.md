@@ -78,17 +78,29 @@ Definiciones clave (ERS 2025–2028, Part 2):
 - ajusta parámetros (si hace falta) hasta cumplir.
 
 ## 5) Filosofía de parametrización (clave para ML)
-Separar en dos capas:
+Separar en dos capas **explícitas y exportables por separado** (requisito del proyecto):
 
-### Capa A — Planform 2D (cumplimiento reglas)
-Parámetros que controlan el **contorno** y, por tanto, las medidas 2D.
+### Capa A — Planform 2D ("corte", cumplimiento reglas)
+Parámetros que controlan el **contorno** y, por tanto, las medidas 2D. Esta capa representa el **tamaño físico** de la vela (planform) dentro del reglamento.
 
-### Capa B — Forma 3D (aerodinámica)
-Parámetros que controlan el **flying shape** (twist/camber) sin romper el contorno 2D.
+Salida asociada:
+- `planform_params` (vector)
+- `planform_measurements` (ERS literal)
 
-Esto permite:
-- datasets donde el contorno (A) y la forma (B) varían de manera controlada,
-- garantizar cumplimiento reglamentario al nivel 2D.
+### Capa B — Forma 3D (trim/aerodinámica)
+Parámetros que controlan el **flying shape** para un planform dado:
+- `twist(η)`, `camber(η)`, `camber_pos(η)`
+
+Salida asociada:
+- `shape_params` (vector)
+- (opcional) `section_curves` (perfiles 2D por estación)
+
+Esto permite entrenar y usar el surrogate de forma jerárquica:
+- Optimizar **diseño**: variar `planform_params`.
+- Optimizar **trim**: variar `shape_params` condicionado al planform.
+- Evaluar desempeño: variar condiciones de viento y ángulos de operación por separado.
+
+Nota: el planform aquí representa el contorno del paño; la panelización/estructura real de un velamen no se modela en el MVP.
 
 ## 6) Parametrización propuesta (MVP)
 ### 6.1 Mayor — Planform 2D
@@ -203,11 +215,23 @@ Requerimos un módulo de sampling con:
 - Latin Hypercube Sampling (LHS),
 - barridos en malla (grid) para sanity checks.
 
-Cada muestra debe producir:
-- `params.json` (vector y nombres),
-- `geometry.stl`,
-- `measurements.json` (mediciones 2D),
-- `manifest.json` (git commit, timestamp, ruleset).
+### 12.1 Estructura jerárquica de muestras (requisito)
+Para cada **planform** se deben poder generar múltiples **trims/flying-shapes**.
+
+- Nivel 1: sample `planform_params` → genera planform legal + mediciones ERS.
+- Nivel 2: sample `shape_params` condicionados al planform → genera geometría 3D.
+
+Esto facilita entrenar modelos tipo:
+- `F = f(planform_params, shape_params, wind_params)`
+
+### 12.2 Artefactos por muestra
+Cada muestra (planform + shape) debe producir:
+- `planform_params.json`
+- `shape_params.json`
+- `wind_params.json` (cuando aplique en el pipeline CFD)
+- `geometry_main.stl`, `geometry_jib.stl`
+- `measurements_main.json`, `measurements_jib.json` (ERS literal)
+- `manifest.json` (git commit, timestamp, rulesets, semilla)
 
 ## 13) Estructura del repositorio (propuesta)
 - `geometrias_j70/`
