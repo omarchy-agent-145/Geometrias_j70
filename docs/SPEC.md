@@ -1,0 +1,231 @@
+# SPEC — Geometrias_j70 (Generador paramétrico de velas J/70)
+
+## 0) Propósito
+Construir un generador **100% Python** capaz de crear la geometría 3D completa de:
+- **Mayor (mainsail)**
+- **Foque (headsail/jib)**
+
+…en formatos triangulados **listos para OpenFOAM/snappyHexMesh** (p.ej. STL/OBJ), con:
+- **parametrización explícita y consistente** (vector de parámetros) para dataset/ML,
+- **cumplimiento reglamentario** (dimensiones 2D medibles),
+- **reproducibilidad** (misma entrada → misma malla STL),
+- validaciones automáticas (mediciones, calidad de superficie).
+
+## 1) Alcance (Scope)
+### Incluye
+- Generación de **planform 2D** reglamentario (contorno en plano) para mayor y foque.
+- Generación de **flying shape 3D** mediante **loft por secciones** (estaciones en altura).
+- Conversión a **superficie con espesor pequeño** (thin solid) y cierre de bordes (watertight), para robustez en snappyHexMesh.
+- Export a **STL (ASCII o binario)** y/o **OBJ**.
+- Export de **metadata** (JSON/YAML) con parámetros, versión de reglas, hash git.
+- Herramientas CLI para generar lotes (batch) y para validar.
+
+### No incluye (por ahora)
+- FSI/membrana con trim (cunningham, backstay, etc.) acoplado.
+- Panelización real de velas (seams) y construcción detallada.
+- Geometría completa del rig/casco (solo velas; opcionalmente superficies simplificadas para mástil/botavara en el futuro).
+
+## 2) Usuarios y casos de uso
+- **CFD**: generar velas con variación controlada (twist/camber) para correr OpenFOAM.
+- **ML/Surrogate**: generar miles de geometrías + vector de parámetros consistente para entrenar modelo predictivo de fuerzas.
+
+## 3) Convenciones y sistema de coordenadas
+Definir una convención fija (crítica para dataset):
+- Unidades: **metros** (internamente). Input/Output permite mm pero se normaliza.
+- Ejes recomendados:
+  - **z**: vertical (altura sobre el tack), z=0 en tack.
+  - **x**: dirección “hacia atrás” (de grátil hacia baluma / hacia popa en el barco).
+  - **y**: dirección transversal (espesor y lado barlovento/sotavento).
+
+La superficie media de la vela se genera inicialmente en el plano x–z (y=0), luego se aplica espesor ±y.
+
+## 4) Reglas: qué se debe cumplir (MVP)
+### 4.1 Mayor (mainsail) — constraints
+A partir de J/70 Class Rules 2026, Sección G:
+- Luff length (máx)
+- Leech length (máx)
+- Foot length (máx)
+- Widths: top, upper, 3/4, 1/2, 1/4 (máx)
+- Restricción adicional: **leech no puede extenderse aft** de rectas entre ciertos puntos (por tramos batten-pocket).
+
+**Nota**: la especificación de “upper leech point” aparece en la regla; su definición se debe implementar en el medidor.
+
+### 4.2 Foque (headsail) — constraints
+- Luff length (máx)
+- Luff perpendicular (LP) (máx)
+- Widths: top, 3/4, 1/2, 1/4 (máx)
+
+**Importante**: el reglamento no entrega explícitamente foot/leech máximos en la tabla; el software debe definir un planform que respete las medidas existentes.
+
+### 4.3 Interpretación/Medición (ERS)
+Para automatizar cumplimiento, necesitamos un **módulo de medición** ("measurer"):
+- Dado un contorno 2D, computa las magnitudes reglamentarias (widths en leech points, longitudes de bordes, etc.).
+- MVP: implementar medición consistente con una convención explícita basada en ERS (aunque sea aproximación), y dejar trazado para implementar ERS literal.
+
+**Decisión de diseño**: el generador no asume que “estación en altura = leech point”. En lugar de eso:
+- define el planform,
+- **mide**,
+- ajusta parámetros (si hace falta) hasta cumplir.
+
+## 5) Filosofía de parametrización (clave para ML)
+Separar en dos capas:
+
+### Capa A — Planform 2D (cumplimiento reglas)
+Parámetros que controlan el **contorno** y, por tanto, las medidas 2D.
+
+### Capa B — Forma 3D (aerodinámica)
+Parámetros que controlan el **flying shape** (twist/camber) sin romper el contorno 2D.
+
+Esto permite:
+- datasets donde el contorno (A) y la forma (B) varían de manera controlada,
+- garantizar cumplimiento reglamentario al nivel 2D.
+
+## 6) Parametrización propuesta (MVP)
+### 6.1 Mayor — Planform 2D
+**Entrada objetivo**: generar un contorno que cumpla máximos.
+
+Representación recomendada:
+- Grátil (luff) como curva paramétrica L(u), u∈[0,1] con longitud objetivo `luff_len`.
+  - MVP: luff recto.
+  - Param opcional: `luff_curve_amp` (curvatura del grátil en x).
+- Pujamen (foot) como curva simple (recta o spline suave).
+- Baluma (leech) como **B-spline** en x–z, con control parametrizado por **leech-points**.
+
+**Parámetros mínimos (propuestos):**
+- `main_luff_len` (m)
+- `main_foot_len` (m)
+- `main_leech_len` (m)
+- `main_width_top`, `main_width_upper`, `main_width_3q`, `main_width_half`, `main_width_1q` (m)
+- Parámetros de suavidad/forma entre checkpoints (p.ej. `roach_shape_kappa`)
+
+**Estrategia de construcción:**
+- Fijar `tack=(0,0)`, `head=(0, main_luff_len)`.
+- Definir `clew` mediante `main_foot_len` en x y z=0 (o permitir clew height si se modela un foot no horizontal).
+- Construir baluma como spline que pase por puntos a definir en los leech points.
+- Ajustar spline para que:
+  - widths en leech points sean ≤ máximos,
+  - leech length ≤ máximo,
+  - se cumpla la restricción “no más atrás que rectas” (por segmentos).
+
+### 6.2 Foque — Planform 2D
+La tabla define Luff + LP + widths. Falta unívocamente la posición del clew (altura). Se propone agregar un parámetro geométrico adicional:
+
+**Parámetros mínimos (propuestos):**
+- `jib_luff_len` (m)
+- `jib_LP` (m)
+- `jib_width_top`, `jib_width_3q`, `jib_width_half`, `jib_width_1q` (m)
+- `jib_clew_height_frac` ∈ (0,1) — fracción de altura del clew sobre el tack respecto al luff.
+
+**Construcción sugerida:**
+- Luff entre `tack` y `head`.
+- Clew a una altura `z_clew = jib_clew_height_frac * jib_luff_len`.
+- Impone que el LP (perpendicular al luff) en el clew sea el valor deseado.
+- Construye baluma con spline que cumpla widths.
+
+### 6.3 Forma 3D por secciones (mayor y foque)
+Definir estaciones en altura `η=z/H`, η∈[0,1].
+
+En cada estación:
+- Cuerda `c(η)` viene del planform.
+- Definir camber (draft) y posición de draft:
+  - `camber(η)` como % de cuerda.
+  - `camber_pos(η)` como % de cuerda.
+- Definir twist:
+  - `twist(η)` en grados.
+
+**Parametrización compacta (recomendada para ML):**
+Representar cada función con pocos coeficientes:
+- `camber(η)`: spline cúbica con Nknots (p.ej. 4–6) o polinomio (p.ej. 3er orden) con límites.
+- `camber_pos(η)`: idem.
+- `twist(η)`: idem.
+
+De este modo el vector de parámetros es de dimensión fija (ideal para red).
+
+**Sección 2D (curvatura polinómica):**
+- Usar una línea de curvatura tipo “NACA 4-digit camber line” o polinomio piecewise que garantice suavidad C1/C2.
+- Opción: permitir “asymmetry” controlada (para modelling de vela real con distinta curvatura barlovento/sotavento) — fuera de MVP.
+
+## 7) Espesor y watertight
+snappyHexMesh es más robusto con superficies cerradas.
+
+**MVP**:
+- `thickness` (m) constante (p.ej. 0.002).
+- Generar dos superficies offset (±thickness/2 en y) y cerrar borde con una banda triangulada.
+- Salida: 1 STL watertight por vela.
+
+## 8) Requisitos de output para OpenFOAM
+- Export a `*.stl` (preferido) y/o `*.obj`.
+- Normales consistentes (orientación definida; p.ej. normal hacia +y).
+- Escala en metros.
+- Nomenclatura:
+  - `j70_main_<id>.stl`
+  - `j70_jib_<id>.stl`
+
+Ubicación esperada en un caso OpenFOAM:
+- `constant/triSurface/j70_main_....stl`
+
+## 9) Validaciones automáticas
+### 9.1 Validación reglamentaria
+- Cálculo de medidas 2D y chequeo ≤ máximos (por vela).
+- Reporte detallado: qué medida falla y por cuánto.
+
+### 9.2 Validación geométrica
+- Watertightness (sin agujeros).
+- Self-intersections (idealmente none).
+- Calidad de triángulos (área mínima, ángulo mínimo opcional).
+
+### 9.3 Validación OpenFOAM
+- Script opcional que ejecute `surfaceCheck` (si está disponible en el entorno).
+
+## 10) Interface de usuario (CLI)
+Propuesta de comandos:
+- `geometrias-j70 generate --config config.yaml --out out_dir/`
+- `geometrias-j70 validate --stl path.stl --rules ruleset.yaml`
+- `geometrias-j70 batch --sampler lhs --n 1000 --seed 123 --out dataset/`
+
+## 11) Configuración y reglasets
+- `rulesets/j70_2026.yaml` con todos los máximos/mínimos usados.
+- `configs/*.yaml` para definir una geometría o un barrido.
+
+## 12) Sampling para dataset (ML)
+Requerimos un módulo de sampling con:
+- random uniforme con límites,
+- Latin Hypercube Sampling (LHS),
+- barridos en malla (grid) para sanity checks.
+
+Cada muestra debe producir:
+- `params.json` (vector y nombres),
+- `geometry.stl`,
+- `measurements.json` (mediciones 2D),
+- `manifest.json` (git commit, timestamp, ruleset).
+
+## 13) Estructura del repositorio (propuesta)
+- `geometrias_j70/`
+  - `planform/` (2D)
+  - `sections/` (2D camber line)
+  - `loft/` (3D surface)
+  - `thicken/` (espesor y cierre)
+  - `export/` (STL/OBJ)
+  - `measure/` (mediciones tipo ERS)
+  - `sampling/`
+- `scripts/` (entrypoints)
+- `tests/` (unit tests: medición, planform, export)
+
+## 14) Criterios de éxito (Definition of Done)
+MVP exitoso cuando:
+1) Se puede generar una mayor y un foque en STL watertight.
+2) El validador reporta medidas 2D **≤ máximos** del ruleset.
+3) snappyHexMesh puede leer el STL (al menos en un caso de prueba).
+4) El pipeline batch genera N geometrías con metadata y parámetros consistentes.
+
+## 15) Riesgos y decisiones pendientes
+- Implementación exacta de ERS (leech points / width measurement) vs aproximación.
+- Para foque: definición geométrica extra del clew (altura) para cerrar el problema.
+- Rangos realistas de camber/twist para dataset (evitar geometrías degeneradas).
+
+---
+
+## Próximas decisiones (para cerrar especificación)
+1) ¿MVP con medición ERS **aproximada** + tests, o implementamos ERS literal desde el inicio?
+2) ¿Cuántas estaciones por altura y cuántos coeficientes por función (twist/camber/pos)?
+3) ¿Qué rango de camber (%) y twist (°) consideramos “válido” para dataset inicial?
